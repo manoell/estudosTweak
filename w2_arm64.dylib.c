@@ -1,5 +1,4 @@
 typedef unsigned char   undefined;
-
 typedef unsigned char    byte;
 typedef unsigned int    dword;
 typedef long long    longlong;
@@ -13,28 +12,19 @@ typedef unsigned int    undefined4;
 typedef unsigned long    undefined8;
 typedef unsigned short    word;
 typedef qword Implementation;
-
 typedef struct cfstringStruct cfstringStruct, *PcfstringStruct;
-
 struct cfstringStruct {
     qword field0_0x0;
     qword field1_0x8;
     pointer field2_0x10;
     long field3_0x18;
 };
-
 typedef qword Cache;
-
 typedef ulonglong uint64_t;
-
 typedef longlong __int64_t;
-
 typedef __int64_t __darwin_off_t;
-
 typedef ulong __darwin_size_t;
-
 typedef struct utsname utsname, *Putsname;
-
 struct utsname {
     char sysname[256];
     char nodename[256];
@@ -42,44 +32,30 @@ struct utsname {
     char version[256];
     char machine[256];
 };
-
 typedef ulong uintptr_t;
-
 typedef int int32_t;
-
 typedef long dispatch_queue_priority_t;
-
 typedef struct dispatch_queue_s dispatch_queue_s, *Pdispatch_queue_s;
-
 typedef struct dispatch_queue_s *dispatch_queue_t;
-
 struct dispatch_queue_s {
 };
-
 typedef struct method_list_t method_list_t, *Pmethod_list_t;
-
 struct method_list_t {
     dword entsizeAndFlags;
     dword count;
 };
-
 typedef struct ivar_list_t ivar_list_t, *Pivar_list_t;
-
 struct ivar_list_t {
     dword entsize;
     dword count;
 };
-
 typedef struct method_list_t_19_ method_list_t_19_, *Pmethod_list_t_19_;
-
 typedef struct method_t method_t, *Pmethod_t;
-
 struct method_t {
     string *name;
     string *types;
     void *imp;
 };
-
 struct method_list_t_19_ {
     dword entsizeAndFlags;
     dword count;
@@ -103,11 +79,8 @@ struct method_list_t_19_ {
     struct method_t method17;
     struct method_t method18;
 };
-
 typedef dword bool;
-
 typedef struct method_list_t_47_ method_list_t_47_, *Pmethod_list_t_47_;
-
 struct method_list_t_47_ {
     dword entsizeAndFlags;
     dword count;
@@ -159,15 +132,10 @@ struct method_list_t_47_ {
     struct method_t method45;
     struct method_t method46;
 };
-
 typedef struct class_t class_t, *Pclass_t;
-
 typedef struct class_rw_t class_rw_t, *Pclass_rw_t;
-
 typedef struct protocol_list_t protocol_list_t, *Pprotocol_list_t;
-
 typedef struct objc_property_list objc_property_list, *Pobjc_property_list;
-
 struct class_rw_t {
     qword flags;
     qword instanceStart;
@@ -179,12 +147,10 @@ struct class_rw_t {
     qword weakIvarLayout;
     struct objc_property_list *baseProperties;
 };
-
 struct objc_property_list {
     dword entsize;
     dword count;
 };
-
 struct class_t {
     struct class_t *isa;
     struct class_t *superclass;
@@ -192,18 +158,13 @@ struct class_t {
     Implementation vtable;
     struct class_rw_t *data;
 };
-
 struct protocol_list_t {
     qword count;
 };
-
 typedef struct opaqueCMSampleBuffer opaqueCMSampleBuffer, *PopaqueCMSampleBuffer;
-
 struct opaqueCMSampleBuffer {
 };
-
 typedef struct protocol_t protocol_t, *Pprotocol_t;
-
 struct protocol_t {
     qword isa;
     string *name;
@@ -216,9 +177,7 @@ struct protocol_t {
     qword unknown0;
     qword unknown1;
 };
-
 typedef struct ivar_t ivar_t, *Pivar_t;
-
 struct ivar_t {
     qword *offset;
     string *name;
@@ -226,24 +185,18 @@ struct ivar_t {
     dword alignment;
     dword size;
 };
-
 typedef struct method_list_t_1_ method_list_t_1_, *Pmethod_list_t_1_;
-
 struct method_list_t_1_ {
     dword entsizeAndFlags;
     dword count;
     struct method_t method0;
 };
-
 typedef struct objc_property_list_4_ objc_property_list_4_, *Pobjc_property_list_4_;
-
 typedef struct objc_property objc_property, *Pobjc_property;
-
 struct objc_property {
     char *name;
     char *name;
 };
-
 struct objc_property_list_4_ {
     dword entsize;
     dword count;
@@ -252,16 +205,12 @@ struct objc_property_list_4_ {
     struct objc_property property2;
     struct objc_property property3;
 };
-
 typedef struct protocol_list_t_1_ protocol_list_t_1_, *Pprotocol_list_t_1_;
-
 struct protocol_list_t_1_ {
     qword count;
     struct protocol_t *protocol0;
 };
-
 typedef struct method_list_t_3_ method_list_t_3_, *Pmethod_list_t_3_;
-
 struct method_list_t_3_ {
     dword entsizeAndFlags;
     dword count;
@@ -269,9 +218,7 @@ struct method_list_t_3_ {
     struct method_t method1;
     struct method_t method2;
 };
-
 typedef struct method_list_t_9_ method_list_t_9_, *Pmethod_list_t_9_;
-
 struct method_list_t_9_ {
     dword entsizeAndFlags;
     dword count;
@@ -285,11 +232,8 @@ struct method_list_t_9_ {
     struct method_t method7;
     struct method_t method8;
 };
-
 typedef qword ID;
-
 typedef struct method_list_t_18_ method_list_t_18_, *Pmethod_list_t_18_;
-
 struct method_list_t_18_ {
     dword entsizeAndFlags;
     dword count;
@@ -312,9 +256,7 @@ struct method_list_t_18_ {
     struct method_t method16;
     struct method_t method17;
 };
-
 typedef struct method_list_t_14_ method_list_t_14_, *Pmethod_list_t_14_;
-
 struct method_list_t_14_ {
     dword entsizeAndFlags;
     dword count;
@@ -333,9 +275,7 @@ struct method_list_t_14_ {
     struct method_t method12;
     struct method_t method13;
 };
-
 typedef struct objc_property_list_18_ objc_property_list_18_, *Pobjc_property_list_18_;
-
 struct objc_property_list_18_ {
     dword entsize;
     dword count;
@@ -358,17 +298,13 @@ struct objc_property_list_18_ {
     struct objc_property property16;
     struct objc_property property17;
 };
-
 typedef struct protocol_list_t_2_ protocol_list_t_2_, *Pprotocol_list_t_2_;
-
 struct protocol_list_t_2_ {
     qword count;
     struct protocol_t *protocol0;
     struct protocol_t *protocol1;
 };
-
 typedef struct method_list_t_4_ method_list_t_4_, *Pmethod_list_t_4_;
-
 struct method_list_t_4_ {
     dword entsizeAndFlags;
     dword count;
@@ -377,18 +313,14 @@ struct method_list_t_4_ {
     struct method_t method2;
     struct method_t method3;
 };
-
 typedef struct method_list_t_2_ method_list_t_2_, *Pmethod_list_t_2_;
-
 struct method_list_t_2_ {
     dword entsizeAndFlags;
     dword count;
     struct method_t method0;
     struct method_t method1;
 };
-
 typedef struct protocol_list_t_4_ protocol_list_t_4_, *Pprotocol_list_t_4_;
-
 struct protocol_list_t_4_ {
     qword count;
     struct protocol_t *protocol0;
@@ -396,9 +328,7 @@ struct protocol_list_t_4_ {
     struct protocol_t *protocol2;
     struct protocol_t *protocol3;
 };
-
 typedef struct ivar_list_t_4_ ivar_list_t_4_, *Pivar_list_t_4_;
-
 struct ivar_list_t_4_ {
     dword entsize;
     dword count;
@@ -407,9 +337,7 @@ struct ivar_list_t_4_ {
     struct ivar_t var2;
     struct ivar_t var3;
 };
-
 typedef struct method_list_t_8_ method_list_t_8_, *Pmethod_list_t_8_;
-
 struct method_list_t_8_ {
     dword entsizeAndFlags;
     dword count;
@@ -422,9 +350,7 @@ struct method_list_t_8_ {
     struct method_t method6;
     struct method_t method7;
 };
-
 typedef struct ivar_list_t_14_ ivar_list_t_14_, *Pivar_list_t_14_;
-
 struct ivar_list_t_14_ {
     dword entsize;
     dword count;
@@ -443,9 +369,7 @@ struct ivar_list_t_14_ {
     struct ivar_t var12;
     struct ivar_t var13;
 };
-
 typedef struct method_list_t_6_ method_list_t_6_, *Pmethod_list_t_6_;
-
 struct method_list_t_6_ {
     dword entsizeAndFlags;
     dword count;
@@ -456,9 +380,7 @@ struct method_list_t_6_ {
     struct method_t method4;
     struct method_t method5;
 };
-
 typedef struct method_list_t_12_ method_list_t_12_, *Pmethod_list_t_12_;
-
 struct method_list_t_12_ {
     dword entsizeAndFlags;
     dword count;
@@ -475,18 +397,13 @@ struct method_list_t_12_ {
     struct method_t method10;
     struct method_t method11;
 };
-
 typedef qword SEL;
-
 typedef struct objc_image_info objc_image_info, *Pobjc_image_info;
-
 struct objc_image_info {
     dword version;
     dword flags;
 };
-
 typedef struct method_list_t_50_ method_list_t_50_, *Pmethod_list_t_50_;
-
 struct method_list_t_50_ {
     dword entsizeAndFlags;
     dword count;
@@ -541,37 +458,23 @@ struct method_list_t_50_ {
     struct method_t method48;
     struct method_t method49;
 };
-
 typedef __darwin_size_t size_t;
-
 typedef uint64_t dispatch_time_t;
-
 typedef longlong int64_t;
-
 typedef uint uint32_t;
-
 typedef uint32_t CC_LONG;
-
 typedef void (*dispatch_function_t)(void *);
-
 typedef struct __sFILEX __sFILEX, *P__sFILEX;
-
 struct __sFILEX {
 };
-
 typedef struct __sbuf __sbuf, *P__sbuf;
-
 struct __sbuf {
     uchar *_base;
     int _size;
 };
-
 typedef struct __sFILE __sFILE, *P__sFILE;
-
 typedef __darwin_off_t fpos_t;
-
 typedef struct __sFILE FILE;
-
 struct __sFILE {
     uchar *_p;
     int _r;
@@ -594,19 +497,12 @@ struct __sFILE {
     int _blksize;
     fpos_t _offset;
 };
-
 typedef uint32_t CCOptions;
-
 typedef uint32_t CCAlgorithm;
-
 typedef int32_t CCCryptorStatus;
-
 typedef uint32_t CCOperation;
-
 typedef uint u_int32_t;
-
 typedef struct _Unwind_Exception _Unwind_Exception, *P_Unwind_Exception;
-
 typedef enum enum_4370 {
     _URC_NO_REASON=0,
     _URC_FOREIGN_EXCEPTION_CAUGHT=1,
@@ -618,9 +514,7 @@ typedef enum enum_4370 {
     _URC_INSTALL_CONTEXT=7,
     _URC_CONTINUE_UNWIND=8
 } enum_4370;
-
 typedef enum enum_4370 _Unwind_Reason_Code;
-
 struct _Unwind_Exception {
     uint64_t exception_class;
     void (*exception_cleanup)(_Unwind_Reason_Code, struct _Unwind_Exception *);
@@ -628,24 +522,16 @@ struct _Unwind_Exception {
     uintptr_t private_2;
     uint32_t reserved[3];
 };
-
 typedef struct __CFDictionary __CFDictionary, *P__CFDictionary;
-
 struct __CFDictionary { // PlaceHolder Structure
 };
-
 typedef struct __CFString __CFString, *P__CFString;
-
 struct __CFString { // PlaceHolder Structure
 };
-
 typedef struct __CFNotificationCenter __CFNotificationCenter, *P__CFNotificationCenter;
-
 struct __CFNotificationCenter { // PlaceHolder Structure
 };
-
 typedef struct CS_CodeDirectory CS_CodeDirectory, *PCS_CodeDirectory;
-
 struct CS_CodeDirectory {
     dword magic; // magic number (CSMAGIC_CODEDIRECTORY)
     dword length; // total length of CodeDirectory blob
@@ -669,23 +555,17 @@ struct CS_CodeDirectory {
     qword execSegLimit; // limit of executable segment
     qword execSegFlags; // executable segment flags
 };
-
 typedef struct uuid_command uuid_command, *Puuid_command;
-
 struct uuid_command {
     dword cmd;
     dword cmdsize;
     byte uuid[16];
 };
-
 typedef struct lc_str lc_str, *Plc_str;
-
 struct lc_str {
     dword offset;
 };
-
 typedef struct dyld_info_command dyld_info_command, *Pdyld_info_command;
-
 struct dyld_info_command {
     dword cmd;
     dword cmdsize;
@@ -700,16 +580,12 @@ struct dyld_info_command {
     dword export_off; // file offset to lazy binding info
     dword export_size; // size of lazy binding info
 };
-
 typedef struct CS_BlobIndex CS_BlobIndex, *PCS_BlobIndex;
-
 struct CS_BlobIndex {
     dword type; // type of entry
     dword offset; // offset of entry
 };
-
 typedef struct section section, *Psection;
-
 struct section {
     char sectname[16];
     char segname[16];
@@ -724,9 +600,7 @@ struct section {
     dword reserved2;
     dword reserved3;
 };
-
 typedef struct encryption_info_command encryption_info_command, *Pencryption_info_command;
-
 struct encryption_info_command {
     dword cmd;
     dword cmdsize;
@@ -735,9 +609,7 @@ struct encryption_info_command {
     dword cryptid;
     dword pad;
 };
-
 typedef struct nlist nlist, *Pnlist;
-
 struct nlist {
     dword n_strx;
     byte n_type;
@@ -745,9 +617,7 @@ struct nlist {
     word n_desc;
     qword n_value;
 };
-
 typedef struct segment_command segment_command, *Psegment_command;
-
 struct segment_command {
     dword cmd;
     dword cmdsize;
@@ -761,17 +631,13 @@ struct segment_command {
     dword nsects;
     dword flags;
 };
-
 typedef struct source_version_command source_version_command, *Psource_version_command;
-
 struct source_version_command {
     dword cmd;
     dword cmdsize;
     qword version;
 };
-
 typedef struct mach_header mach_header, *Pmach_header;
-
 struct mach_header {
     dword magic;
     dword cputype;
@@ -782,16 +648,13 @@ struct mach_header {
     dword flags;
     dword reserved;
 };
-
 typedef struct dylib dylib, *Pdylib;
-
 struct dylib {
     struct lc_str name;
     dword timestamp;
     dword current_version;
     dword compatibility_version;
 };
-
 typedef enum bind_opcode {
     BIND_OPCODE_DONE=0,
     BIND_OPCODE_SET_DYLIB_ORDINAL_IMM=16,
@@ -808,9 +671,7 @@ typedef enum bind_opcode {
     BIND_OPCODE_DO_BIND_ULEB_TIMES_SKIPPING_ULEB=192,
     BIND_OPCODE_THREADED=208
 } bind_opcode;
-
 typedef struct dysymtab_command dysymtab_command, *Pdysymtab_command;
-
 struct dysymtab_command {
     dword cmd;
     dword cmdsize;
@@ -833,26 +694,20 @@ struct dysymtab_command {
     dword locreloff;
     dword nlocrel;
 };
-
 typedef struct CS_SuperBlob CS_SuperBlob, *PCS_SuperBlob;
-
 struct CS_SuperBlob {
     dword magic; // magic number
     dword length; // total length of SuperBlob
     dword count; // number of index entries following
     struct CS_BlobIndex index[3]; // (count) entries
 };
-
 typedef struct dylib_command dylib_command, *Pdylib_command;
-
 struct dylib_command {
     dword cmd;
     dword cmdsize;
     struct dylib dylib;
 };
-
 typedef struct symtab_command symtab_command, *Psymtab_command;
-
 struct symtab_command {
     dword cmd;
     dword cmdsize;
@@ -861,32 +716,25 @@ struct symtab_command {
     dword stroff;
     dword strsize;
 };
-
 typedef struct version_min_command version_min_command, *Pversion_min_command;
-
 struct version_min_command {
     dword cmd;
     dword cmdsize;
     dword version;
     dword sdk;
 };
-
 typedef struct linkedit_data_command linkedit_data_command, *Plinkedit_data_command;
-
 struct linkedit_data_command {
     dword cmd;
     dword cmdsize;
     dword dataoff;
     dword datasize;
 };
-
 typedef struct CS_GenericBlob CS_GenericBlob, *PCS_GenericBlob;
-
 struct CS_GenericBlob {
     dword magic; // magic number
     dword length; // total length of blob
 };
-
 typedef enum rebase_opcode {
     REBASE_OPCODE_DONE=0,
     REBASE_OPCODE_SET_TYPE_IMM=16,
@@ -898,23 +746,15 @@ typedef enum rebase_opcode {
     REBASE_OPCODE_DO_REBASE_ADD_ADDR_ULEB=112,
     REBASE_OPCODE_DO_REBASE_ULEB_TIMES_SKIPPING_ULEB=128
 } rebase_opcode;
-
 typedef long dispatch_once_t;
-
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void BojjiView::layoutSubviews(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   ID local_48;
   ID local_40;
   ID local_38;
-  
   iVar1 = -0x72c228ab;
   do {
     while( true ) {
@@ -961,13 +801,8 @@ void BojjiView::layoutSubviews(ID param_1,SEL param_2)
   } while (iVar2 != -0x87723c3);
   return;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void BojjiView::initBojjiPayer_(ID param_1,SEL param_2,ID param_3)
-
 {
   undefined8 uVar1;
   ID IVar2;
@@ -999,7 +834,6 @@ void BojjiView::initBojjiPayer_(ID param_1,SEL param_2,ID param_3)
   undefined8 local_90;
   undefined8 local_88;
   undefined8 local_80;
-  
   auVar8._8_8_ = param_2;
   auVar8._0_8_ = local_80;
   uVar5 = *(undefined8 *)PTR__AVLayerVideoGravityResizeAspectFill_00068008;
@@ -1294,11 +1128,7 @@ LAB_000065f8:
   }
   goto LAB_000060e0;
 }
-
-
-
 undefined1  [16] FUN_000069c8(void)
-
 {
   int iVar1;
   int iVar2;
@@ -1307,7 +1137,6 @@ undefined1  [16] FUN_000069c8(void)
   int iVar5;
   undefined1 auVar6 [16];
   undefined8 local_20;
-  
   iVar5 = -0x42955701;
   do {
     while( true ) {
@@ -1372,14 +1201,9 @@ undefined1  [16] FUN_000069c8(void)
   auVar6._0_8_ = local_20;
   return auVar6;
 }
-
-
-
 // Function Stack Size: 0x30 bytes
-
 void BojjiView::observeValueForKeyPath_ofObject_change_context_
                (ID param_1,SEL param_2,ID param_3,ID param_4,ID param_5,void *param_6)
-
 {
   int iVar1;
   int iVar2;
@@ -1423,7 +1247,6 @@ void BojjiView::observeValueForKeyPath_ofObject_change_context_
   char local_71;
   long local_70;
   char local_61;
-  
   auVar6._8_8_ = param_2;
   auVar6._0_8_ = local_88;
   iVar1 = -0x34a21fb8;
@@ -1913,13 +1736,8 @@ LAB_00007800:
   iVar2 = -0x1b927aeb;
   goto LAB_00006bac;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID BojjiView::BojjiFilePath(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -1928,7 +1746,6 @@ ID BojjiView::BojjiFilePath(ID param_1,SEL param_2)
   undefined8 local_18;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x3ad0b592;
   do {
     while( true ) {
@@ -1971,13 +1788,8 @@ ID BojjiView::BojjiFilePath(ID param_1,SEL param_2)
   } while ((iVar4 == 0x7a72314) || (iVar1 = iVar4, iVar4 != -0x3d1888f5));
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void BojjiView::setBojjiFilePath_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   bool bVar2;
@@ -1985,7 +1797,6 @@ void BojjiView::setBojjiFilePath_(ID param_1,SEL param_2,ID param_3)
   int iVar4;
   int iVar5;
   int iVar6;
-  
   iVar3 = -0x60f0c7dd;
   do {
     while (-0x5a24082 < iVar3) {
@@ -2050,13 +1861,8 @@ LAB_00007b70:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID BojjiView::moviePlayer(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -2064,7 +1870,6 @@ ID BojjiView::moviePlayer(ID param_1,SEL param_2)
   undefined4 local_14;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar2 = -0x6cc57daf;
   do {
     while( true ) {
@@ -2107,20 +1912,14 @@ ID BojjiView::moviePlayer(ID param_1,SEL param_2)
   } while ((iVar3 == 0x67132b12) || (iVar2 = iVar3, iVar3 != 0x710e24ca));
   return *(ID *)(local_8 + local_10);
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void BojjiView::setMoviePlayer_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = -0x4c916833;
   do {
     while( true ) {
@@ -2170,18 +1969,12 @@ void BojjiView::setMoviePlayer_(ID param_1,SEL param_2,ID param_3)
   } while (iVar5 != 0x108dd989);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID BojjiView::player(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x5c120421;
 LAB_00007ed4:
   do {
@@ -2209,17 +2002,11 @@ LAB_00007f28:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void BojjiView::setPlayer_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   undefined4 local_14;
-  
   iVar1 = 0x61f04191;
   while( true ) {
     while (0x66e57005 < iVar1) {
@@ -2239,19 +2026,13 @@ void BojjiView::setPlayer_(ID param_1,SEL param_2,ID param_3)
   _objc_storeStrong(param_1 + (long)local_14,param_3);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID BojjiView::item(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int local_c;
   ID local_8;
-  
   iVar1 = -0x3b6e37a1;
   do {
     while( true ) {
@@ -2298,18 +2079,12 @@ ID BojjiView::item(ID param_1,SEL param_2)
           (iVar1 = iVar2, iVar2 != -0x19e5fb83));
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void BojjiView::setItem_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
   undefined4 local_34;
-  
   iVar1 = 0x680ba67f;
   do {
     while( true ) {
@@ -2347,20 +2122,14 @@ void BojjiView::setItem_(ID param_1,SEL param_2,ID param_3)
   } while ((iVar2 == -0xb6c251e) || (iVar1 = iVar2, iVar2 != 0xf20d954));
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void BojjiView::_cxx_destruct(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   ID local_38;
   int local_2c;
   long local_28;
-  
   iVar1 = -0x177cf6fb;
   do {
     while( true ) {
@@ -2422,13 +2191,8 @@ void BojjiView::_cxx_destruct(ID param_1,SEL param_2)
   } while (iVar2 != 0x6371d14f);
   return;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID FBEncryptorAES::encryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4)
-
 {
   int iVar1;
   undefined8 **ppuVar2;
@@ -2457,7 +2221,6 @@ ID FBEncryptorAES::encryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4
   char *local_78;
   undefined8 local_70;
   long local_68;
-  
   local_68 = *(long *)PTR____stack_chk_guard_00068050;
   ppuVar2 = &local_e0;
   iVar1 = -0x77a5f7b2;
@@ -2647,13 +2410,8 @@ ID FBEncryptorAES::encryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4
   IVar7 = _objc_autoreleaseReturnValue(unaff_x21);
   return IVar7;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID FBEncryptorAES::decryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4)
-
 {
   int iVar1;
   int iVar2;
@@ -2682,7 +2440,6 @@ ID FBEncryptorAES::decryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4
   undefined8 local_80;
   undefined8 uStack_78;
   long local_70;
-  
   local_70 = *(long *)PTR____stack_chk_guard_00068050;
   iVar1 = 0x4f34af11;
   do {
@@ -2876,13 +2633,8 @@ ID FBEncryptorAES::decryptData_key_(ID param_1,SEL param_2,ID param_3,ID param_4
   IVar8 = _objc_autoreleaseReturnValue(unaff_x21);
   return IVar8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::encodeData_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -2898,7 +2650,6 @@ ID GTMBase64::encodeData_(ID param_1,SEL param_2,ID param_3)
   ID local_68;
   ID local_60;
   ID local_58;
-  
   iVar2 = -0x36b6ddb2;
   do {
     while( true ) {
@@ -2978,13 +2729,8 @@ ID GTMBase64::encodeData_(ID param_1,SEL param_2,ID param_3)
           (iVar2 = iVar5, iVar5 != 0x900c65b));
   return local_60;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::decodeData_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -2996,7 +2742,6 @@ ID GTMBase64::decodeData_(ID param_1,SEL param_2,ID param_3)
   ID local_68;
   char *local_60;
   ID local_58;
-  
   iVar2 = 0xb92cc35;
   do {
     while( true ) {
@@ -3054,20 +2799,14 @@ ID GTMBase64::decodeData_(ID param_1,SEL param_2,ID param_3)
   } while (iVar5 != -0x4c476c5);
   return local_58;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID GTMBase64::encodeBytes_length_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   ID local_48;
-  
   iVar2 = 0x37ed97;
   do {
     while( true ) {
@@ -3124,21 +2863,15 @@ ID GTMBase64::encodeBytes_length_
   _objc_retainAutorelease(local_48);
   return local_48;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID GTMBase64::decodeBytes_length_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
   ID local_48;
-  
   iVar1 = 0x6ec54c66;
   do {
     while( true ) {
@@ -3196,13 +2929,8 @@ ID GTMBase64::decodeBytes_length_
   } while (iVar4 != -0x25dcab54);
   return local_48;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::stringByEncodingData_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -3225,7 +2953,6 @@ ID GTMBase64::stringByEncodingData_(ID param_1,SEL param_2,ID param_3)
   char local_71;
   undefined8 local_70;
   undefined8 local_68;
-  
   auVar7._8_8_ = param_2;
   auVar7._0_8_ = local_68;
   iVar2 = 0x433026c8;
@@ -3363,14 +3090,9 @@ ID GTMBase64::stringByEncodingData_(ID param_1,SEL param_2,ID param_3)
   IVar5 = _objc_autoreleaseReturnValue(unaff_x23);
   return IVar5;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID GTMBase64::stringByEncodingBytes_length_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4)
-
 {
   int iVar1;
   int iVar2;
@@ -3382,7 +3104,6 @@ ID GTMBase64::stringByEncodingBytes_length_
   ID local_78;
   char local_69;
   undefined8 local_68;
-  
   iVar1 = 0x681a0763;
   do {
     while( true ) {
@@ -3482,13 +3203,8 @@ ID GTMBase64::stringByEncodingBytes_length_
   IVar4 = _objc_autoreleaseReturnValue(unaff_x24);
   return IVar4;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::decodeString_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -3512,7 +3228,6 @@ ID GTMBase64::decodeString_(ID param_1,SEL param_2,ID param_3)
   const_void__ local_78;
   ID local_70;
   ID local_68;
-  
   auVar6._8_8_ = param_2;
   auVar6._0_8_ = local_90;
   iVar2 = -0x60fc4df1;
@@ -3691,13 +3406,8 @@ ID GTMBase64::decodeString_(ID param_1,SEL param_2,ID param_3)
   } while (iVar5 != 0x399f4f96);
   return local_68;
 }
-
-
-
 // Function Stack Size: 0x1c bytes
-
 ID GTMBase64::webSafeEncodeData_padded_(ID param_1,SEL param_2,ID param_3,bool param_4)
-
 {
   int iVar1;
   unsigned_long_long uVar2;
@@ -3710,7 +3420,6 @@ ID GTMBase64::webSafeEncodeData_padded_(ID param_1,SEL param_2,ID param_3,bool p
   ID local_58;
   const_void__ local_50;
   ID local_48;
-  
   auVar4._8_8_ = param_2;
   auVar4._0_8_ = local_50;
   iVar1 = 0x5be6d2a2;
@@ -3785,13 +3494,8 @@ ID GTMBase64::webSafeEncodeData_padded_(ID param_1,SEL param_2,ID param_3,bool p
   } while (iVar3 != 0x5b59cbe2);
   return local_48;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::webSafeDecodeData_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   const_void__ pvVar2;
@@ -3805,7 +3509,6 @@ ID GTMBase64::webSafeDecodeData_(ID param_1,SEL param_2,ID param_3)
   ID local_68;
   char *local_60;
   ID local_58;
-  
   iVar1 = -0x4f7faa56;
   do {
     while( true ) {
@@ -3883,14 +3586,9 @@ ID GTMBase64::webSafeDecodeData_(ID param_1,SEL param_2,ID param_3)
           (iVar1 = iVar5, iVar5 != -0x738bdb0f));
   return local_58;
 }
-
-
-
 // Function Stack Size: 0x24 bytes
-
 ID GTMBase64::webSafeEncodeBytes_length_padded_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4,bool param_5)
-
 {
   int iVar1;
   int iVar2;
@@ -3898,7 +3596,6 @@ ID GTMBase64::webSafeEncodeBytes_length_padded_
   char *local_68;
   char *local_60;
   ID local_58;
-  
   iVar1 = -0x742e7274;
   do {
     while( true ) {
@@ -3964,20 +3661,14 @@ ID GTMBase64::webSafeEncodeBytes_length_padded_
   } while (iVar3 != -0x68e9be71);
   return local_58;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 ID GTMBase64::webSafeDecodeBytes_length_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   ID local_48;
-  
   iVar1 = -0x754eb94e;
   do {
     while( true ) {
@@ -4041,13 +3732,8 @@ ID GTMBase64::webSafeDecodeBytes_length_
   } while ((iVar3 == 0x37fcbc9a) || (iVar1 = iVar3, iVar3 != 0x46baea0a));
   return local_48;
 }
-
-
-
 // Function Stack Size: 0x1c bytes
-
 ID GTMBase64::stringByWebSafeEncodingData_padded_(ID param_1,SEL param_2,ID param_3,bool param_4)
-
 {
   int iVar1;
   int iVar2;
@@ -4068,7 +3754,6 @@ ID GTMBase64::stringByWebSafeEncodingData_padded_(ID param_1,SEL param_2,ID para
   char local_71;
   undefined8 local_70;
   undefined8 local_68;
-  
   auVar6._8_8_ = param_2;
   auVar6._0_8_ = local_90;
   iVar2 = -0x37899bdf;
@@ -4207,14 +3892,9 @@ ID GTMBase64::stringByWebSafeEncodingData_padded_(ID param_1,SEL param_2,ID para
   IVar4 = _objc_autoreleaseReturnValue(unaff_x24);
   return IVar4;
 }
-
-
-
 // Function Stack Size: 0x24 bytes
-
 ID GTMBase64::stringByWebSafeEncodingBytes_length_padded_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4,bool param_5)
-
 {
   int iVar1;
   undefined8 uVar2;
@@ -4233,7 +3913,6 @@ ID GTMBase64::stringByWebSafeEncodingBytes_length_padded_
   undefined *local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   auVar8._8_8_ = param_2;
   auVar8._0_8_ = local_70;
   iVar6 = 0x60f8395c;
@@ -4364,13 +4043,8 @@ LAB_0000b524:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID GTMBase64::webSafeDecodeString_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -4395,7 +4069,6 @@ ID GTMBase64::webSafeDecodeString_(ID param_1,SEL param_2,ID param_3)
   undefined8 local_78;
   char *local_70;
   undefined8 local_68;
-  
   auVar6._8_8_ = param_2;
   auVar6._0_8_ = local_78;
   iVar2 = -0x3458e8b7;
@@ -4556,15 +4229,10 @@ ID GTMBase64::webSafeDecodeString_(ID param_1,SEL param_2,ID param_3)
   IVar3 = _objc_autoreleaseReturnValue(unaff_x23);
   return IVar3;
 }
-
-
-
 // Function Stack Size: 0x2c bytes
-
 ID GTMBase64::baseEncode_length_charset_padded_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4,
              const_char__ param_5,bool param_6)
-
 {
   unsigned_long_long uVar1;
   undefined8 uVar2;
@@ -4589,7 +4257,6 @@ ID GTMBase64::baseEncode_length_charset_padded_
   undefined8 local_80;
   ID local_78;
   ID local_70;
-  
   uVar1 = FUN_0000c3ec(param_4,param_6);
   iVar7 = 0xbb8ac0f;
   do {
@@ -4796,11 +4463,7 @@ LAB_0000c150:
     }
   } while( true );
 }
-
-
-
 ulong FUN_0000c3ec(long param_1,int param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -4812,7 +4475,6 @@ ulong FUN_0000c3ec(long param_1,int param_2)
   undefined8 local_18;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = -0x352a5f1b;
   if (param_2 == 0) {
     iVar1 = 0x3e38b442;
@@ -4931,15 +4593,10 @@ ulong FUN_0000c3ec(long param_1,int param_2)
   } while (iVar5 != 0xc558d32);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x2c bytes
-
 ID GTMBase64::baseDecode_length_charset_requirePadding_
              (ID param_1,SEL param_2,const_void__ param_3,unsigned_long_long param_4,
              const_char__ param_5,bool param_6)
-
 {
   int iVar1;
   undefined8 extraout_x1;
@@ -4968,7 +4625,6 @@ ID GTMBase64::baseDecode_length_charset_requirePadding_
   char local_71;
   ID local_70;
   ID local_68;
-  
   auVar7._8_8_ = param_2;
   auVar7._0_8_ = local_80;
   iVar4 = 0x6b341820;
@@ -5214,11 +4870,7 @@ LAB_0000cb80:
   }
   goto LAB_0000c79c;
 }
-
-
-
 long FUN_0000cdc4(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -5226,7 +4878,6 @@ long FUN_0000cdc4(long param_1)
   int iVar4;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar3 = -0x2827bf00;
   do {
     while( true ) {
@@ -5283,47 +4934,31 @@ long FUN_0000cdc4(long param_1)
   } while (iVar4 != 0x2d295edd);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x3c bytes
-
 unsigned_long_long
 GTMBase64::baseEncode_srcLen_destBytes_destLen_charset_padded_
           (ID param_1,SEL param_2,const_char__ param_3,unsigned_long_long param_4,char *param_5,
           unsigned_long_long param_6,const_char__ param_7,bool param_8)
-
 {
   unsigned_long_long uVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0000cf6c. Too many branches
                     // WARNING: Treating indirect jump as call
   uVar1 = (*DAT_0006f9b0)();
   return uVar1;
 }
-
-
-
 // Function Stack Size: 0x3c bytes
-
 unsigned_long_long
 GTMBase64::baseDecode_srcLen_destBytes_destLen_charset_requirePadding_
           (ID param_1,SEL param_2,const_char__ param_3,unsigned_long_long param_4,char *param_5,
           unsigned_long_long param_6,const_char__ param_7,bool param_8)
-
 {
   unsigned_long_long uVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0000da7c. Too many branches
                     // WARNING: Treating indirect jump as call
   uVar1 = (*DAT_0006ff00)();
   return uVar1;
 }
-
-
-
 byte FUN_0000e710(ulong param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -5331,7 +4966,6 @@ byte FUN_0000e710(ulong param_1)
   ulong local_10;
   byte local_2;
   byte local_1;
-  
   iVar2 = -0x34033bd8;
   do {
     while( true ) {
@@ -5375,22 +5009,15 @@ byte FUN_0000e710(ulong param_1)
   } while (iVar3 != 0x3b07fb00);
   return local_1;
 }
-
-
 /*
 Unable to decompile 'viewDidLoad'
 Cause: Exception while decompiling 0000e83c: process: timeout
-
 */
-
-
 undefined1  [16] FUN_000277d4(ulong param_1)
-
 {
   int iVar1;
   undefined1 auVar2 [16];
   undefined8 local_20;
-  
   iVar1 = -0x6bbd9ed0;
   while( true ) {
     while( true ) {
@@ -5423,11 +5050,7 @@ undefined1  [16] FUN_000277d4(ulong param_1)
   auVar2._0_8_ = local_20;
   return auVar2;
 }
-
-
-
 undefined1  [16] FUN_000278dc(ulong param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -5435,7 +5058,6 @@ undefined1  [16] FUN_000278dc(ulong param_1)
   int iVar4;
   undefined1 auVar5 [16];
   undefined8 local_10;
-  
   iVar1 = 0x531d1237;
   do {
     while( true ) {
@@ -5486,11 +5108,7 @@ undefined1  [16] FUN_000278dc(ulong param_1)
   auVar5._0_8_ = local_10;
   return auVar5;
 }
-
-
-
 void FUN_00027a38(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -5518,7 +5136,6 @@ void FUN_00027a38(long param_1)
   undefined *local_78;
   undefined *local_70;
   undefined8 *local_68;
-  
   puVar7 = (undefined8 *)auStack_e0;
   iVar1 = -0x44e2e283;
   do {
@@ -5684,12 +5301,8 @@ void FUN_00027a38(long param_1)
   } while (iVar10 != -0x361ecd95);
   return;
 }
-
-
-
 void FUN_00028008(undefined1 param_1 [16],undefined1 param_2 [16],double param_3,double param_4,
                  long param_5)
-
 {
   int iVar1;
   int iVar2;
@@ -5770,7 +5383,6 @@ void FUN_00028008(undefined1 param_1 [16],undefined1 param_2 [16],double param_3
   char *local_90;
   char local_81;
   cfstringStruct *local_80;
-  
   puVar9 = (undefined8 *)auStack_270;
   local_1c0 = "writeToFile:atomically:";
   local_210 = "mbjbView";
@@ -6201,16 +5813,11 @@ void FUN_00028008(undefined1 param_1 [16],undefined1 param_2 [16],double param_3
   } while (iVar12 != -0x6774ac4e);
   return;
 }
-
-
-
 void FUN_00029048(long param_1)
-
 {
   int iVar1;
   char *local_60;
   undefined8 local_58;
-  
   iVar1 = 0x195003c;
   while( true ) {
     while (iVar1 < 0x22b97687) {
@@ -6231,11 +5838,7 @@ void FUN_00029048(long param_1)
   }
   return;
 }
-
-
-
 void FUN_00029124(undefined8 param_1,long param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -6243,7 +5846,6 @@ void FUN_00029124(undefined8 param_1,long param_2)
   int iVar4;
   undefined8 local_30;
   undefined8 local_28;
-  
   iVar1 = 0x46e58170;
   do {
     while( true ) {
@@ -6300,16 +5902,11 @@ void FUN_00029124(undefined8 param_1,long param_2)
   } while (iVar4 != 0x14114e28);
   return;
 }
-
-
-
 void FUN_000292ac(long param_1)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
-  
   iVar1 = -0x46f805ad;
   do {
     while( true ) {
@@ -6367,15 +5964,10 @@ void FUN_000292ac(long param_1)
   } while (iVar3 != 0x2224e537);
   return;
 }
-
-
-
 void FUN_0002942c(long param_1)
-
 {
   int iVar1;
   long local_78;
-  
   iVar1 = -0x75399890;
   while( true ) {
     while (0x25167361 < iVar1) {
@@ -6401,11 +5993,7 @@ void FUN_0002942c(long param_1)
   }
   return;
 }
-
-
-
 void FUN_00029558(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -6413,7 +6001,6 @@ void FUN_00029558(long param_1)
   long local_38;
   char *local_30;
   undefined8 local_28;
-  
   iVar2 = -0x67963dfc;
   do {
     while( true ) {
@@ -6465,14 +6052,9 @@ void FUN_00029558(long param_1)
   } while (iVar3 != -0x2ca04fd4);
   return;
 }
-
-
-
 void FUN_000296e8(long param_1)
-
 {
   int iVar1;
-  
   iVar1 = 0x5a949592;
   while( true ) {
     while (0x4bbc8c15 < iVar1) {
@@ -6491,18 +6073,13 @@ void FUN_000296e8(long param_1)
   }
   return;
 }
-
-
-
 void FUN_000297b0(undefined8 param_1,long param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_40;
   undefined8 local_38;
-  
   iVar1 = -0x689a85e6;
   do {
     while( true ) {
@@ -6563,11 +6140,7 @@ void FUN_000297b0(undefined8 param_1,long param_2)
   } while ((iVar3 == 0x71fe9061) || (iVar1 = iVar3, iVar3 != 0x59dd2091));
   return;
 }
-
-
-
 void FUN_0002999c(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -6578,7 +6151,6 @@ void FUN_0002999c(long param_1)
   undefined8 *local_48;
   undefined8 *local_40;
   undefined8 local_38;
-  
   iVar2 = -0x3775b80;
   do {
     while( true ) {
@@ -6646,15 +6218,10 @@ void FUN_0002999c(long param_1)
   } while (iVar3 != 0x49579ba3);
   return;
 }
-
-
-
 void FUN_00029bf0(undefined8 param_1,long param_2)
-
 {
   int iVar1;
   undefined8 local_48;
-  
   iVar1 = 0x59c7016c;
   do {
     while( true ) {
@@ -6676,11 +6243,7 @@ void FUN_00029bf0(undefined8 param_1,long param_2)
   _objc_retain(*(undefined8 *)(local_48 + 0x30));
   return;
 }
-
-
-
 void FUN_00029cc8(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -6688,7 +6251,6 @@ void FUN_00029cc8(long param_1)
   undefined8 local_48;
   undefined8 local_40;
   undefined8 local_38;
-  
   iVar2 = 0x282569c0;
   do {
     while( true ) {
@@ -6752,20 +6314,14 @@ void FUN_00029cc8(long param_1)
   } while (iVar3 != -0x4e73903b);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::xzok(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
   char *local_38;
-  
   iVar3 = 0x6d9ae408;
   do {
     while( true ) {
@@ -6828,19 +6384,13 @@ LAB_0002a010:
     iVar3 = 0x6523a1ab;
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::xzok2(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
-  
   iVar1 = 0x64d956d4;
   do {
     while( true ) {
@@ -6898,20 +6448,14 @@ void SettingViewControllernn::xzok2(ID param_1,SEL param_2)
   } while (iVar4 != 0x6fa5786);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthor(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   char *local_10;
   ID local_8;
-  
   iVar2 = -0x1658f4cd;
   do {
     while( true ) {
@@ -6957,20 +6501,14 @@ void SettingViewControllernn::AboutAuthor(ID param_1,SEL param_2)
   _objc_msgSend(local_8,local_10,1,0);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthorclean(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = 0x7551b443;
   do {
     while( true ) {
@@ -7027,20 +6565,14 @@ void SettingViewControllernn::AboutAuthorclean(ID param_1,SEL param_2)
   } while (iVar5 != 0x72351ea);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthor2(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = -0xa30f94d;
   do {
     while( true ) {
@@ -7085,19 +6617,13 @@ void SettingViewControllernn::AboutAuthor2(ID param_1,SEL param_2)
   } while (iVar5 != 0x273c4ce1);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthor3(ID param_1,SEL param_2)
-
 {
   int iVar1;
   bool bVar2;
   int iVar3;
   ID local_68;
-  
   iVar3 = 0x1b0d5ae4;
   do {
     while( true ) {
@@ -7139,16 +6665,10 @@ void SettingViewControllernn::AboutAuthor3(ID param_1,SEL param_2)
   } while (iVar3 != -0x211f845a);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthorxz(ID param_1,SEL param_2)
-
 {
   int iVar1;
-  
   iVar1 = 0x20624c00;
   do {
     while( true ) {
@@ -7166,16 +6686,10 @@ void SettingViewControllernn::AboutAuthorxz(ID param_1,SEL param_2)
   } while (iVar1 != 0x3d3fd8b5);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthorxzenglish(ID param_1,SEL param_2)
-
 {
   int iVar1;
-  
   iVar1 = -0x6b25eb00;
   while( true ) {
     while (iVar1 < 0x3f81419e) {
@@ -7193,20 +6707,14 @@ void SettingViewControllernn::AboutAuthorxzenglish(ID param_1,SEL param_2)
   }
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::openw2(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = 0x65ed046;
   do {
     while( true ) {
@@ -7251,19 +6759,13 @@ void SettingViewControllernn::openw2(ID param_1,SEL param_2)
   } while (iVar5 != -0x2a0abef8);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthorgb(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
-  
   iVar1 = 0x72d6eaa5;
   do {
     while( true ) {
@@ -7315,14 +6817,9 @@ void SettingViewControllernn::AboutAuthorgb(ID param_1,SEL param_2)
           (iVar1 = iVar4, iVar4 != 0x1968863e));
   return;
 }
-
-
-
 // WARNING: Restarted to delay deadcode elimination for space: stack
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthorgb2(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -7387,7 +6884,6 @@ void SettingViewControllernn::AboutAuthorgb2(ID param_1,SEL param_2)
   undefined1 auStack_170 [128];
   undefined1 auStack_f0 [128];
   long local_70;
-  
   local_70 = *(long *)PTR____stack_chk_guard_00068050;
   iVar1 = 0x2aec52df;
 LAB_0002aa98:
@@ -7980,20 +7476,14 @@ LAB_0002b0b4:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthoropen(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = 0x5d0f3fee;
   do {
     while( true ) {
@@ -8042,13 +7532,8 @@ void SettingViewControllernn::AboutAuthoropen(ID param_1,SEL param_2)
   } while (iVar5 != -0x59949036);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::AboutAuthoropen2(ID param_1,SEL param_2)
-
 {
   undefined8 *puVar1;
   undefined8 *puVar2;
@@ -8121,7 +7606,6 @@ void SettingViewControllernn::AboutAuthoropen2(ID param_1,SEL param_2)
   ulong local_90;
   ulong local_88;
   long local_80;
-  
   ppcVar6 = &local_230;
   local_80 = *(long *)PTR____stack_chk_guard_00068050;
   local_1f0 = "systemBlueColor";
@@ -8894,19 +8378,13 @@ LAB_0002d2f0:
   iVar3 = -0x55750368;
   goto LAB_0002beec;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::presentationControllerDidDismiss_(ID param_1,SEL param_2,ID param_3)
-
 {
   SEL extraout_x1;
   SEL extraout_x1_00;
   int iVar1;
   undefined8 local_68;
-  
   iVar1 = -0x1231561f;
   do {
     while( true ) {
@@ -8941,14 +8419,9 @@ void SettingViewControllernn::presentationControllerDidDismiss_(ID param_1,SEL p
   } while (iVar1 != 0x5daadc84);
   return;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 double SettingViewControllernn::tableView_heightForHeaderInSection_
                  (ID param_1,SEL param_2,ID param_3,long_long param_4)
-
 {
   int iVar1;
   double dVar2;
@@ -8959,7 +8432,6 @@ double SettingViewControllernn::tableView_heightForHeaderInSection_
   double unaff_d8;
   undefined8 local_80;
   double local_78;
-  
   _objc_retain(param_3);
   iVar3 = -0x79f0a117;
   do {
@@ -9049,19 +8521,13 @@ double SettingViewControllernn::tableView_heightForHeaderInSection_
   } while (iVar4 != 0x69d07785);
   return local_78;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 long_long SettingViewControllernn::tableView_numberOfRowsInSection_
                     (ID param_1,SEL param_2,ID param_3,long_long param_4)
-
 {
   undefined8 uVar1;
   long_long lVar2;
   int iVar3;
-  
   iVar3 = 0x3ac371;
   do {
     while( true ) {
@@ -9083,14 +8549,9 @@ long_long SettingViewControllernn::tableView_numberOfRowsInSection_
   _objc_release(uVar1);
   return lVar2;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 void SettingViewControllernn::tableView_didSelectRowAtIndexPath_
                (ID param_1,SEL param_2,ID param_3,ID param_4)
-
 {
   int iVar1;
   int iVar2;
@@ -9101,7 +8562,6 @@ void SettingViewControllernn::tableView_didSelectRowAtIndexPath_
   ID local_78;
   char local_69;
   char *local_68;
-  
   _objc_retain(param_3);
   iVar1 = 0x1f827c4a;
   do {
@@ -9211,13 +8671,8 @@ void SettingViewControllernn::tableView_didSelectRowAtIndexPath_
   } while (iVar6 != -0x490f556e);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m5bView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   bool bVar2;
@@ -9225,7 +8680,6 @@ ID SettingViewControllernn::m5bView(ID param_1,SEL param_2)
   undefined4 local_14;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar3 = -0x774d5599;
   do {
     while( true ) {
@@ -9270,19 +8724,13 @@ ID SettingViewControllernn::m5bView(ID param_1,SEL param_2)
   } while (iVar3 != -0x65e289f1);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM5bView_(ID param_1,SEL param_2,ID param_3)
-
 {
   undefined8 uVar1;
   int iVar2;
   long lVar3;
   undefined8 uVar4;
-  
   lVar3 = (long)_m5bView;
   uVar1 = _objc_retain(param_3);
   uVar4 = *(undefined8 *)(param_1 + lVar3);
@@ -9305,17 +8753,11 @@ void SettingViewControllernn::setM5bView_(ID param_1,SEL param_2,ID param_3)
   }
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m5xbView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_8;
-  
   iVar1 = -0x542aee70;
   while( true ) {
     while (iVar1 < 0x6ace48d5) {
@@ -9334,20 +8776,14 @@ ID SettingViewControllernn::m5xbView(ID param_1,SEL param_2)
   }
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM5xbView_(ID param_1,SEL param_2,ID param_3)
-
 {
   undefined8 uVar1;
   long lVar2;
   undefined8 uVar3;
   int iVar4;
   undefined8 local_18;
-  
   lVar2 = (long)_m5xbView;
   uVar1 = _objc_retain(param_3);
   uVar3 = *(undefined8 *)(param_1 + lVar2);
@@ -9371,18 +8807,12 @@ void SettingViewControllernn::setM5xbView_(ID param_1,SEL param_2,ID param_3)
   _objc_release(local_18);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m0bView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = -0xa695c1e;
   while( true ) {
     while (-0xa695c1f < iVar1) {
@@ -9402,13 +8832,8 @@ ID SettingViewControllernn::m0bView(ID param_1,SEL param_2)
   }
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM0bView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -9418,7 +8843,6 @@ void SettingViewControllernn::setM0bView_(ID param_1,SEL param_2,ID param_3)
   SEL extraout_x1_01;
   int iVar4;
   undefined8 local_38;
-  
   iVar1 = 0x5837ed34;
   do {
     while( true ) {
@@ -9481,20 +8905,14 @@ void SettingViewControllernn::setM0bView_(ID param_1,SEL param_2,ID param_3)
   } while ((iVar4 == -0xcd0aca1) || (iVar1 = iVar4, iVar4 != 0x35308da));
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m1bView(ID param_1,SEL param_2)
-
 {
   uint uVar1;
   uint uVar2;
   uint uVar3;
   long local_10;
   ID local_8;
-  
   uVar2 = 0x7d3cb46f;
   do {
     while( true ) {
@@ -9531,13 +8949,8 @@ ID SettingViewControllernn::m1bView(ID param_1,SEL param_2)
   } while (uVar3 != 0xaa7037b);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM1bView_(ID param_1,SEL param_2,ID param_3)
-
 {
   undefined8 uVar1;
   undefined8 uVar2;
@@ -9545,7 +8958,6 @@ void SettingViewControllernn::setM1bView_(ID param_1,SEL param_2,ID param_3)
   long local_28;
   ID local_20;
   undefined8 *local_18;
-  
   iVar3 = 0x1b0c3832;
   do {
     while (iVar3 < 0x1b0c3832) {
@@ -9576,13 +8988,8 @@ LAB_0002e910:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m2bView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -9590,7 +8997,6 @@ ID SettingViewControllernn::m2bView(ID param_1,SEL param_2)
   int iVar4;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x5c72b7d4;
   do {
     while( true ) {
@@ -9636,18 +9042,12 @@ ID SettingViewControllernn::m2bView(ID param_1,SEL param_2)
   } while (iVar4 != -0x167cdd32);
   return *(ID *)(local_8 + local_10);
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM2bView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   undefined8 local_20;
   undefined8 local_18;
-  
   iVar1 = 0x1ab70561;
   while (iVar1 != 0x36e2727a) {
     if (iVar1 == 0x1ab70561) {
@@ -9659,19 +9059,13 @@ void SettingViewControllernn::setM2bView_(ID param_1,SEL param_2,ID param_3)
   _objc_storeStrong(local_18 + local_20,param_3);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m000bView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_8;
-  
   iVar2 = -0x30fb846;
   do {
     while( true ) {
@@ -9712,13 +9106,8 @@ ID SettingViewControllernn::m000bView(ID param_1,SEL param_2)
           (iVar2 = iVar3, iVar3 != -0x222c7fad));
   return *local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM000bView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -9728,7 +9117,6 @@ void SettingViewControllernn::setM000bView_(ID param_1,SEL param_2,ID param_3)
   int iVar4;
   ID *local_40;
   ID local_38;
-  
   iVar2 = 0x762dac5;
   do {
     while( true ) {
@@ -9792,19 +9180,13 @@ void SettingViewControllernn::setM000bView_(ID param_1,SEL param_2,ID param_3)
   } while (iVar4 != -0x4de05d02);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::m5xbViewclean(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined4 local_14;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x51d66de1;
   while( true ) {
     while( true ) {
@@ -9837,19 +9219,13 @@ ID SettingViewControllernn::m5xbViewclean(ID param_1,SEL param_2)
   }
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setM5xbViewclean_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
   undefined8 local_30;
   undefined8 local_28;
-  
   iVar1 = -0x71f825a8;
   do {
     do {
@@ -9898,18 +9274,12 @@ void SettingViewControllernn::setM5xbViewclean_(ID param_1,SEL param_2,ID param_
   } while ((iVar2 == -0x4797fb54) || (iVar1 = iVar2, iVar2 != -0x4ad09cf9));
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::xzm5xbView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x3a75a115;
   do {
     while( true ) {
@@ -9938,13 +9308,8 @@ ID SettingViewControllernn::xzm5xbView(ID param_1,SEL param_2)
   } while (iVar1 != -0x628b0104);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setXzm5xbView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -9953,7 +9318,6 @@ void SettingViewControllernn::setXzm5xbView_(ID param_1,SEL param_2,ID param_3)
   int iVar3;
   ID *local_40;
   ID local_38;
-  
   iVar2 = -0x10d75e7f;
   do {
     while( true ) {
@@ -10000,19 +9364,13 @@ void SettingViewControllernn::setXzm5xbView_(ID param_1,SEL param_2,ID param_3)
   _objc_release(local_38);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::mbjbView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_18;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x5e56b44b;
   do {
     while( true ) {
@@ -10045,13 +9403,8 @@ ID SettingViewControllernn::mbjbView(ID param_1,SEL param_2)
   } while (iVar1 != -0x2e5b39fa);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setMbjbView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -10060,7 +9413,6 @@ void SettingViewControllernn::setMbjbView_(ID param_1,SEL param_2,ID param_3)
   undefined1 auVar4 [16];
   long local_40;
   undefined8 local_38;
-  
   iVar2 = -0x54b002d5;
   do {
     while( true ) {
@@ -10104,19 +9456,13 @@ void SettingViewControllernn::setMbjbView_(ID param_1,SEL param_2,ID param_3)
   } while (iVar3 != -0x5ca952da);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::mzsbView(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_18;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x3aa2be98;
   while( true ) {
     while (0x580b2907 < iVar1) {
@@ -10148,19 +9494,13 @@ ID SettingViewControllernn::mzsbView(ID param_1,SEL param_2)
   }
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setMzsbView_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   long lVar2;
   undefined1 auVar3 [16];
   undefined8 local_58;
-  
   lVar2 = (long)_mzsbView;
   iVar1 = 0x74c8f42d;
   while( true ) {
@@ -10184,13 +9524,8 @@ void SettingViewControllernn::setMzsbView_(ID param_1,SEL param_2,ID param_3)
   _objc_release(local_58,param_2);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::areaLists(ID param_1,SEL param_2)
-
 {
   ID IVar1;
   int iVar2;
@@ -10198,7 +9533,6 @@ ID SettingViewControllernn::areaLists(ID param_1,SEL param_2)
   int iVar4;
   int iVar5;
   ID local_8;
-  
   iVar4 = 0x71ea3c55;
   do {
     while (iVar2 = iVar4, -0x18473c00 < iVar2) {
@@ -10243,18 +9577,12 @@ LAB_0002f91c:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setAreaLists_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = 0x44ae7085;
   do {
     while( true ) {
@@ -10287,19 +9615,13 @@ void SettingViewControllernn::setAreaLists_(ID param_1,SEL param_2,ID param_3)
   _objc_setProperty_nonatomic_copy(local_10,param_2,param_3,local_8);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID SettingViewControllernn::normalSettingTitle(ID param_1,SEL param_2)
-
 {
   ID IVar1;
   int iVar2;
   undefined8 local_10;
   undefined4 local_4;
-  
   iVar2 = 0x3d45567;
   do {
     while( true ) {
@@ -10324,18 +9646,12 @@ ID SettingViewControllernn::normalSettingTitle(ID param_1,SEL param_2)
   IVar1 = _objc_getProperty(local_10,param_2,(long)local_4,0);
   return IVar1;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setNormalSettingTitle_(ID param_1,SEL param_2,ID param_3)
-
 {
   int iVar1;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = -0x391e7eac;
   while (iVar1 != -0x7bd14c31) {
     if (iVar1 == -0x391e7eac) {
@@ -10347,13 +9663,8 @@ void SettingViewControllernn::setNormalSettingTitle_(ID param_1,SEL param_2,ID p
   _objc_setProperty_nonatomic_copy(param_1,param_2,local_8,local_10);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 long_long SettingViewControllernn::selectedRow(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -10362,7 +9673,6 @@ long_long SettingViewControllernn::selectedRow(ID param_1,SEL param_2)
   long local_18;
   ID local_10;
   long_long local_8;
-  
   iVar2 = -0x62448557;
   do {
     while( true ) {
@@ -10411,19 +9721,13 @@ long_long SettingViewControllernn::selectedRow(ID param_1,SEL param_2)
   } while (iVar3 != 0x103fdeb7);
   return local_8;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void SettingViewControllernn::setSelectedRow_(ID param_1,SEL param_2,long_long param_3)
-
 {
   int iVar1;
   int iVar2;
   undefined8 local_10;
   undefined8 local_8;
-  
   iVar1 = -0x33db3e2f;
   do {
     while( true ) {
@@ -10472,20 +9776,14 @@ void SettingViewControllernn::setSelectedRow_(ID param_1,SEL param_2,long_long p
   } while ((iVar2 == 0x37f9f73d) || (iVar1 = iVar2, iVar2 != 0x1875ed6e));
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 bool SettingViewControllernn::isHookRemoveAD(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
   byte local_1;
-  
   iVar1 = 0x6fe5c9a6;
   do {
     while( true ) {
@@ -10542,18 +9840,12 @@ bool SettingViewControllernn::isHookRemoveAD(ID param_1,SEL param_2)
   } while (iVar4 != -0x26ef5c50);
   return (bool)local_1;
 }
-
-
-
 // Function Stack Size: 0x14 bytes
-
 void SettingViewControllernn::setIsHookRemoveAD_(ID param_1,SEL param_2,bool param_3)
-
 {
   int iVar1;
   undefined1 local_9;
   undefined8 local_8;
-  
   iVar1 = 0x5efda941;
   do {
     while( true ) {
@@ -10588,18 +9880,12 @@ LAB_000300f0:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void SettingViewControllernn::_cxx_destruct(ID param_1,SEL param_2)
-
 {
   int iVar1;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar1 = -0x15f31956;
   while( true ) {
     while( true ) {
@@ -10635,33 +9921,22 @@ void SettingViewControllernn::_cxx_destruct(ID param_1,SEL param_2)
   _objc_storeStrong(local_70 + local_68,0);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void MyAlertController::SuccessAlert(ID param_1,SEL param_2)
-
 {
                     // WARNING: Could not recover jumptable at 0x00030354. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00088950)();
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void MyAlertController::FailAlert(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   bool bVar4;
   int iVar5;
-  
   iVar5 = -0x4c3d1313;
   do {
     while( true ) {
@@ -10706,19 +9981,13 @@ void MyAlertController::FailAlert(ID param_1,SEL param_2)
   } while (iVar5 != 0x72707405);
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void MyAlertController::UpdateAlert(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
-  
   iVar1 = 0x21f11a86;
   do {
     while( true ) {
@@ -10757,78 +10026,50 @@ void MyAlertController::UpdateAlert(ID param_1,SEL param_2)
   } while ((iVar4 == -0x41e28aab) || (iVar1 = iVar4, iVar4 != -0x6aeadb70));
   return;
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 ID MyMD5Tools::md5_(ID param_1,SEL param_2,ID param_3)
-
 {
   ID IVar1;
-  
   _objc_retain(param_3);
                     // WARNING: Could not recover jumptable at 0x00030710. Too many branches
                     // WARNING: Treating indirect jump as call
   IVar1 = (*DAT_00088a70)(&_OBJC_CLASS___NSString,"stringWithFormat:");
   return IVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 // ui_ojbkhhhsd()
-
 void ui_ojbkhhhsd(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00030b5c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00089050)();
   return;
 }
-
-
-
 void FUN_00031b38(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00031b70. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00089c10)();
   return;
 }
-
-
-
 void FUN_00032cf0(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00032d18. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008ab30)();
   return;
 }
-
-
-
 void FUN_00033198(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x000331b8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008aec0)();
   return;
 }
-
-
-
 void FUN_00033698(undefined8 param_1,undefined8 param_2)
-
 {
   int iVar1;
   undefined8 local_18;
-  
   iVar1 = -0x7a0b4649;
   do {
     while( true ) {
@@ -10849,17 +10090,12 @@ void FUN_00033698(undefined8 param_1,undefined8 param_2)
   _objc_release(local_18);
   return;
 }
-
-
-
 void FUN_00033740(undefined8 param_1,long param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_38;
-  
   iVar1 = -0x256ee5a3;
   do {
     while( true ) {
@@ -10916,15 +10152,10 @@ void FUN_00033740(undefined8 param_1,long param_2)
   } while ((iVar3 == 0x7c071740) || (iVar1 = iVar3, iVar3 != 0x5b519d9));
   return;
 }
-
-
-
 void FUN_000338ec(long param_1)
-
 {
   int iVar1;
   undefined8 local_58;
-  
   iVar1 = -0x4e32b520;
   do {
     while (iVar1 < 0x2f011ceb) {
@@ -10950,88 +10181,57 @@ LAB_00033998:
     }
   } while( true );
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 // ui_ojbkhhh()
-
 void ui_ojbkhhh(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00033a40. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008b2f0)();
   return;
 }
-
-
-
 void FUN_00034a68(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00034aa4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008be10)();
   return;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 void GetURLController::GetURL(ID param_1,SEL param_2)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003652c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008d6c0)();
   return;
 }
-
-
-
 void FUN_00036d68(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00036da4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008dd40)();
   return;
 }
-
-
-
 void FUN_00038f94(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00038fc8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_0008fb00)();
   return;
 }
-
-
-
 void FUN_00039484(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x000394a4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00090050)();
   return;
 }
-
-
-
 void FUN_0003963c(undefined8 param_1,undefined8 param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_38;
-  
   iVar2 = 0x6429f78b;
   do {
     while( true ) {
@@ -11076,17 +10276,12 @@ void FUN_0003963c(undefined8 param_1,undefined8 param_2)
   } while (iVar3 != 0x3b714a92);
   return;
 }
-
-
-
 void FUN_000397b0(void)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_28;
-  
   iVar2 = 0x6bd20bf1;
   do {
     while( true ) {
@@ -11147,14 +10342,9 @@ void FUN_000397b0(void)
   } while (iVar3 != 0x62478f50);
   return;
 }
-
-
-
 void FUN_00039990(undefined8 param_1,undefined8 param_2)
-
 {
   int iVar1;
-  
   iVar1 = -0x1d319197;
   while (iVar1 != -0x4bf42ede) {
     if (iVar1 == -0x1d319197) {
@@ -11167,11 +10357,7 @@ void FUN_00039990(undefined8 param_1,undefined8 param_2)
   _objc_retainAutoreleaseReturnValue(param_2);
   return;
 }
-
-
-
 void FUN_00039a28(void)
-
 {
   int iVar1;
   undefined8 *puVar2;
@@ -11196,7 +10382,6 @@ void FUN_00039a28(void)
   undefined1 *local_68;
   undefined1 *local_60;
   long local_58;
-  
   local_58 = *(long *)PTR____stack_chk_guard_00068050;
   puVar2 = &local_d0;
   iVar1 = -0x5f81ff1b;
@@ -11432,17 +10617,11 @@ LAB_00039f70:
     }
   } while( true );
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
 // refreshPrefs()
-
 void refreshPrefs(void)
-
 {
   undefined8 uVar1;
-  
   _objc_msgSend(&_OBJC_CLASS___NSUserDefaults,"standardUserDefaults");
   uVar1 = _objc_retain();
   _objc_msgSend(uVar1,"persistentDomainForName:",&cf_xc_lzsxcl_w2Proprefs);
@@ -11451,20 +10630,14 @@ void refreshPrefs(void)
   (*DAT_000901d0)();
   return;
 }
-
-
-
 // PreferencesChangedCallback(__CFNotificationCenter*, void*, __CFString const*, void const*,
 // __CFDictionary const*)
-
 __CFNotificationCenter *
 PreferencesChangedCallback
           (__CFNotificationCenter *param_1,void *param_2,__CFString *param_3,void *param_4,
           __CFDictionary *param_5)
-
 {
   int iVar1;
-  
   iVar1 = 0x4396e80b;
   do {
     while( true ) {
@@ -11483,39 +10656,26 @@ PreferencesChangedCallback
   } while (iVar1 != 0x2072104);
   return param_1;
 }
-
-
-
 void FUN_0003b734(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003b760. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00091650)();
   return;
 }
-
-
-
 void FUN_0003c4cc(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003c524. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000921f0)();
   return;
 }
-
-
-
 void FUN_0003c6fc(void)
-
 {
   undefined8 uVar1;
   cfstringStruct *pcVar2;
   int iVar3;
   undefined8 local_48;
-  
   uVar1 = DAT_000a3fe0;
   DAT_000a3fe0 = &cf_6c565e66d362c8f1;
   _objc_release(uVar1);
@@ -11538,11 +10698,7 @@ void FUN_0003c6fc(void)
   _objc_release(uVar1);
   return;
 }
-
-
-
 ulong FUN_0003c7dc(ulong param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -11562,7 +10718,6 @@ ulong FUN_0003c7dc(ulong param_1)
   cfstringStruct *local_68;
   char local_59;
   cfstringStruct *local_58;
-  
   iVar1 = 0x5a189b0d;
 LAB_0003c838:
   iVar4 = iVar1;
@@ -12003,104 +11158,67 @@ LAB_0003d3ec:
   iVar1 = -0x7440bf1b;
   goto LAB_0003c838;
 }
-
-
-
 void FUN_0003d578(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003d598. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00092310)();
   return;
 }
-
-
-
 void FUN_0003dac8(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003db00. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000928a0)();
   return;
 }
-
-
-
 void FUN_0003e44c(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003e48c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00093060)();
   return;
 }
-
-
-
 void FUN_0003f408(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0003f444. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00093f00)();
   return;
 }
-
-
-
 void FUN_000409ac(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x000409e8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000954b0)();
   return;
 }
-
-
-
 void FUN_00041868(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00041898. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00096430)();
   return;
 }
-
-
-
 void FUN_000422c8(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x000422f4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00096fc0)();
   return;
 }
-
-
-
 void FUN_000423d0(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0004240c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00097060)();
   return;
 }
-
-
-
 void FUN_0004470c(long param_1)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
-  
   iVar2 = -0x4c94479;
   do {
     while( true ) {
@@ -12145,11 +11263,7 @@ void FUN_0004470c(long param_1)
   } while (iVar3 != 0x4de1b6d7);
   return;
 }
-
-
-
 void FUN_00044850(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -12157,7 +11271,6 @@ void FUN_00044850(long param_1)
   long local_18;
   char *local_10;
   undefined8 local_8;
-  
   iVar2 = -0x763554e9;
   do {
     while( true ) {
@@ -12202,17 +11315,12 @@ void FUN_00044850(long param_1)
   _objc_msgSend(local_8,local_10,1,0);
   return;
 }
-
-
-
 void FUN_000449b8(long param_1)
-
 {
   int iVar1;
   int iVar2;
   long local_10;
   undefined8 local_8;
-  
   iVar1 = 0x78a681;
   do {
     while( true ) {
@@ -12255,50 +11363,33 @@ void FUN_000449b8(long param_1)
   _objc_msgSend(local_8,"dismissViewControllerAnimated:completion:",1,0);
   return;
 }
-
-
-
 void FUN_00044b18(undefined8 param_1,undefined8 param_2)
-
 {
                     // WARNING: Could not recover jumptable at 0x00044b30. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00098e40)(param_2);
   return;
 }
-
-
-
 void FUN_00044bd0(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x00044bf4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00098ed0)();
   return;
 }
-
-
-
 void FUN_00044ec8(undefined8 param_1,undefined8 param_2)
-
 {
                     // WARNING: Could not recover jumptable at 0x00044ee4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_00099190)(param_2);
   return;
 }
-
-
-
 void FUN_0004507c(long param_1)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   long local_38;
-  
   iVar2 = 0x76e9deb;
   do {
     while( true ) {
@@ -12351,11 +11442,7 @@ void FUN_0004507c(long param_1)
   } while (iVar3 != -0x2ae24f1e);
   return;
 }
-
-
-
 void FUN_00045200(void)
-
 {
   _NSSearchPathForDirectoriesInDomains(0xd,1,1);
                     // WARNING: Could not recover jumptable at 0x0004522c. Too many branches
@@ -12363,17 +11450,12 @@ void FUN_00045200(void)
   (*DAT_00088ef0)();
   return;
 }
-
-
-
 void FUN_000453b4(void)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_28;
-  
   iVar2 = -0x4124b098;
   do {
     while( true ) {
@@ -12419,29 +11501,18 @@ void FUN_000453b4(void)
           (iVar2 = iVar3, iVar3 != 0x65edcfca));
   return;
 }
-
-
-
 // Function Stack Size: 0x1c bytes
-
 opaqueCMSampleBuffer *
 GetFrame::getCurrentFrame__(ID param_1,SEL param_2,opaqueCMSampleBuffer *param_3,bool param_4)
-
 {
   opaqueCMSampleBuffer *poVar1;
-  
                     // WARNING: Could not recover jumptable at 0x00045580. Too many branches
                     // WARNING: Treating indirect jump as call
   poVar1 = (opaqueCMSampleBuffer *)(*DAT_000a0880)();
   return poVar1;
 }
-
-
-
 // Function Stack Size: 0x10 bytes
-
 ID GetFrame::getKeyWindow(ID param_1,SEL param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -12505,7 +11576,6 @@ ID GetFrame::getKeyWindow(ID param_1,SEL param_2)
   ID local_80;
   ID local_78;
   long local_70;
-  
   auVar9._8_8_ = param_2;
   auVar9._0_8_ = local_a8;
   puVar5 = auStack_180;
@@ -13010,14 +12080,9 @@ LAB_0004710c:
   }
   goto LAB_00046e18;
 }
-
-
-
 // Function Stack Size: 0x20 bytes
-
 void CCUIImagePickerDelegate::imagePickerController_didFinishPickingMediaWithInfo_
                (ID param_1,SEL param_2,ID param_3,ID param_4)
-
 {
   int iVar1;
   undefined8 uVar2;
@@ -13054,7 +12119,6 @@ void CCUIImagePickerDelegate::imagePickerController_didFinishPickingMediaWithInf
   undefined8 local_80;
   undefined8 local_78;
   char *local_70;
-  
   _objc_retain(param_3);
   iVar7 = -0x515aa1d0;
 LAB_00047cd8:
@@ -13478,18 +12542,12 @@ LAB_000484f4:
     }
   } while( true );
 }
-
-
-
 // Function Stack Size: 0x18 bytes
-
 void CCUIImagePickerDelegate::imagePickerControllerDidCancel_(ID param_1,SEL param_2,ID param_3)
-
 {
   undefined8 uVar1;
   int iVar2;
   undefined8 local_68;
-  
   _objc_retain(param_3);
   iVar2 = 0x227e1255;
   while( true ) {
@@ -13516,11 +12574,7 @@ void CCUIImagePickerDelegate::imagePickerControllerDidCancel_(ID param_1,SEL par
   }
   return;
 }
-
-
-
 void _ui_selectVideo(void)
-
 {
   int iVar1;
   undefined8 uVar2;
@@ -13545,7 +12599,6 @@ void _ui_selectVideo(void)
   class_t *local_80;
   char *local_78;
   undefined8 local_70;
-  
   uVar4 = *(undefined8 *)PTR__AVAssetExportPresetPassthrough_00068000;
   iVar7 = 0x57642016;
 LAB_00048c04:
@@ -13918,11 +12971,7 @@ LAB_0004907c:
     }
   } while( true );
 }
-
-
-
 void FUN_0004980c(void)
-
 {
   int iVar1;
   cfstringStruct *pcVar2;
@@ -13943,7 +12992,6 @@ void FUN_0004980c(void)
   undefined8 *local_78;
   char local_69;
   cfstringStruct *local_68;
-  
   puVar3 = (undefined8 *)auStack_b0;
   local_a8 = "isOperatingSystemAtLeastVersion:";
   local_a0 = "processInfo";
@@ -14135,17 +13183,12 @@ LAB_00049a08:
     iVar1 = 0x7bda9836;
   } while( true );
 }
-
-
-
 void FUN_00049e7c(void)
-
 {
   undefined8 uVar1;
   int iVar2;
   int iVar3;
   undefined8 local_28;
-  
   iVar2 = -0x3c0bf4c0;
   do {
     while( true ) {
@@ -14204,11 +13247,7 @@ void FUN_00049e7c(void)
   } while (iVar3 != -0x23964828);
   return;
 }
-
-
-
 void FUN_0004a024(void)
-
 {
   undefined4 *puVar1;
   undefined8 uVar2;
@@ -14223,7 +13262,6 @@ void FUN_0004a024(void)
   char *local_78;
   char *local_70;
   long local_68;
-  
   local_68 = *(long *)PTR____stack_chk_guard_00068050;
   local_78 = "step:";
   local_70 = "addSublayer:";
@@ -14291,11 +13329,7 @@ void FUN_0004a024(void)
                     // WARNING: Subroutine does not return
   ___stack_chk_fail();
 }
-
-
-
 void FUN_0004a448(undefined8 param_1,undefined8 param_2,undefined8 param_3)
-
 {
   int iVar1;
   long lVar2;
@@ -14328,7 +13362,6 @@ void FUN_0004a448(undefined8 param_1,undefined8 param_2,undefined8 param_3)
   byte local_79;
   undefined8 local_78;
   char *local_70;
-  
   uVar10 = *(undefined8 *)PTR__NSRunLoopCommonModes_00068018;
   iVar11 = 0xe2c0a1;
 LAB_0004a51c:
@@ -14731,29 +13764,20 @@ LAB_0004adc0:
     }
   } while( true );
 }
-
-
-
 void FUN_0004b2d0(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0004b338. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000a1cf0)();
   return;
 }
-
-
-
 void FUN_0004c4fc(undefined8 param_1,undefined8 param_2)
-
 {
   undefined8 uVar1;
   int iVar2;
   double dVar3;
   undefined *local_40;
   char *local_38;
-  
   iVar2 = 0x644735a9;
   do {
     while( true ) {
@@ -14782,17 +13806,12 @@ void FUN_0004c4fc(undefined8 param_1,undefined8 param_2)
   (*DAT_000a40d8)(param_1,param_2);
   return;
 }
-
-
-
 void FUN_0004c61c(undefined8 param_1,undefined8 param_2)
-
 {
   int iVar1;
   int iVar2;
   bool bVar3;
   int iVar4;
-  
   iVar4 = 0x78bfe478;
   do {
     while( true ) {
@@ -14848,11 +13867,7 @@ void FUN_0004c61c(undefined8 param_1,undefined8 param_2)
   } while (iVar4 != -0x2b51123d);
   return;
 }
-
-
-
 void FUN_0004c798(undefined8 param_1,undefined8 param_2,undefined8 param_3)
-
 {
   cfstringStruct *pcVar1;
   int iVar2;
@@ -14877,7 +13892,6 @@ void FUN_0004c798(undefined8 param_1,undefined8 param_2,undefined8 param_3)
   undefined8 local_78;
   long local_70;
   code *local_68;
-  
   iVar2 = 0x1dd9398;
   iVar3 = -0x4f2cf1ed;
 LAB_0004c804:
@@ -15190,17 +14204,12 @@ LAB_0004cd58:
     }
   } while( true );
 }
-
-
-
 void FUN_0004d184(undefined8 param_1,undefined8 param_2,undefined8 param_3)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_68;
-  
   iVar2 = 0x27c23c94;
   do {
     while( true ) {
@@ -15247,11 +14256,7 @@ void FUN_0004d184(undefined8 param_1,undefined8 param_2,undefined8 param_3)
   } while (iVar3 != -0x5ccc6a84);
   return;
 }
-
-
-
 void FUN_0004d2ec(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
-
 {
   code *pcVar1;
   undefined8 uVar2;
@@ -15265,7 +14270,6 @@ void FUN_0004d2ec(undefined8 param_1,undefined8 param_2,undefined8 param_3,undef
   undefined8 local_78;
   undefined8 local_70;
   undefined8 *local_68;
-  
   local_78 = param_3;
   _objc_retain(param_3);
   local_70 = param_4;
@@ -15311,11 +14315,7 @@ void FUN_0004d2ec(undefined8 param_1,undefined8 param_2,undefined8 param_3,undef
   } while (iVar4 != 0x7e9939e3);
   return;
 }
-
-
-
 undefined8 FUN_0004d4d0(undefined8 param_1,undefined8 param_2,undefined8 param_3)
-
 {
   char cVar1;
   bool bVar2;
@@ -15359,7 +14359,6 @@ undefined8 FUN_0004d4d0(undefined8 param_1,undefined8 param_2,undefined8 param_3
   undefined8 local_80;
   undefined8 local_78;
   undefined8 local_70;
-  
   iVar3 = -0x5c90470a;
 LAB_0004d544:
   while (iVar8 = iVar3, iVar3 = iVar8, -0x6391a55 < iVar8) {
@@ -15982,11 +14981,7 @@ LAB_0004e134:
   iVar3 = -0x5658527b;
   goto LAB_0004d544;
 }
-
-
-
 undefined8 FUN_0004e9ac(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
-
 {
   char cVar1;
   bool bVar2;
@@ -16030,7 +15025,6 @@ undefined8 FUN_0004e9ac(undefined8 param_1,undefined8 param_2,undefined8 param_3
   undefined8 local_80;
   undefined8 local_78;
   undefined8 local_70;
-  
   iVar9 = -0x4fbd3479;
 LAB_0004ea3c:
   iVar3 = iVar9;
@@ -16450,11 +15444,7 @@ LAB_0004f468:
   }
   goto LAB_0004ea3c;
 }
-
-
-
 void FUN_0004f878(undefined8 param_1,undefined8 param_2,undefined8 param_3)
-
 {
   _objc_retain(param_3);
                     // WARNING: Could not recover jumptable at 0x0004f8c4. Too many branches
@@ -16462,22 +15452,14 @@ void FUN_0004f878(undefined8 param_1,undefined8 param_2,undefined8 param_3)
   (*DAT_000a29d0)();
   return;
 }
-
-
-
 void FUN_0004fef0(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0004ff28. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000a2e20)();
   return;
 }
-
-
-
 void FUN_00050660(undefined8 param_1,undefined8 param_2,long param_3,long param_4)
-
 {
   bool bVar1;
   undefined8 uVar2;
@@ -16494,7 +15476,6 @@ void FUN_00050660(undefined8 param_1,undefined8 param_2,long param_3,long param_
   char *local_78;
   undefined **local_70;
   code *local_68;
-  
   iVar5 = 0x711c811c;
 LAB_000506f4:
   while (iVar3 = iVar5, 0xcd830da < iVar3) {
@@ -16796,17 +15777,12 @@ LAB_000509ec:
   }
   goto LAB_000506f4;
 }
-
-
-
 void FUN_00050f90(void)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
-  
   iVar1 = 0x4d98e3c0;
   do {
     while( true ) {
@@ -16849,11 +15825,7 @@ void FUN_00050f90(void)
           (iVar1 = iVar4, iVar4 != -0xd8be78));
   return;
 }
-
-
-
 void FUN_000510d8(void)
-
 {
   int iVar1;
   int iVar2;
@@ -16869,7 +15841,6 @@ void FUN_000510d8(void)
   undefined8 local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar3 = -0x3677d98b;
   do {
     while( true ) {
@@ -17065,11 +16036,7 @@ LAB_000515bc:
     }
   } while( true );
 }
-
-
-
 void FUN_000516c4(void)
-
 {
   int iVar1;
   int iVar2;
@@ -17082,7 +16049,6 @@ void FUN_000516c4(void)
   undefined8 local_68;
   undefined8 local_60;
   undefined8 local_58;
-  
   iVar1 = -0x564d521d;
   do {
     while( true ) {
@@ -17157,11 +16123,7 @@ void FUN_000516c4(void)
   _objc_release(local_60);
   return;
 }
-
-
-
 void FUN_000519dc(void)
-
 {
   undefined8 *puVar1;
   undefined8 *puVar2;
@@ -17270,7 +16232,6 @@ void FUN_000519dc(void)
   undefined8 local_80;
   undefined8 local_78;
   undefined8 local_70;
-  
   puVar3 = (undefined8 *)auStack_360;
   local_300 = "dismissViewControllerAnimated:completion:";
   local_2f8 = "presentViewController:animated:completion:";
@@ -18321,11 +17282,7 @@ LAB_00053298:
   }
   goto LAB_00051a9c;
 }
-
-
-
 void FUN_000541b8(void)
-
 {
   cfstringStruct *pcVar1;
   int iVar2;
@@ -18347,7 +17304,6 @@ void FUN_000541b8(void)
   undefined8 local_78;
   cfstringStruct *local_70;
   cfstringStruct *local_68;
-  
   iVar4 = 0x48462e42;
 LAB_0005423c:
   while (iVar2 = iVar4, pcVar8 = unaff_x28, iVar4 = iVar2, unaff_x28 = pcVar8, iVar2 < 0x2313a64c) {
@@ -18680,11 +17636,7 @@ LAB_0005456c:
   }
   goto LAB_0005423c;
 }
-
-
-
 void FUN_00054b20(undefined8 param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -18719,7 +17671,6 @@ void FUN_00054b20(undefined8 param_1)
   undefined8 local_80;
   undefined8 local_78;
   undefined8 local_70;
-  
   ppcVar5 = &local_130;
   local_110 = "createDirectoryAtPath:withIntermediateDirectories:attributes:error:";
   local_118 = "removeItemAtPath:error:";
@@ -18994,11 +17945,7 @@ void FUN_00054b20(undefined8 param_1)
   } while (iVar6 != -0x4b3fe238);
   return;
 }
-
-
-
 void FUN_000555e4(void)
-
 {
   int iVar1;
   int iVar2;
@@ -19068,7 +18015,6 @@ void FUN_000555e4(void)
   undefined8 local_80;
   byte local_71;
   undefined8 local_70;
-  
   iVar3 = -0x78b167c;
 LAB_00055650:
   iVar7 = iVar3;
@@ -19877,11 +18823,7 @@ LAB_00056e44:
   iVar3 = 0x866ea16;
   goto LAB_00055650;
 }
-
-
-
 void FUN_00057264(void)
-
 {
   cfstringStruct *pcVar1;
   bool bVar2;
@@ -19914,7 +18856,6 @@ void FUN_00057264(void)
   undefined8 local_80;
   cfstringStruct *local_78;
   cfstringStruct *local_70;
-  
   iVar3 = -0x7529ff62;
 LAB_000572d4:
   iVar8 = iVar3;
@@ -20382,11 +19323,7 @@ LAB_00057bdc:
   }
   goto LAB_000572d4;
 }
-
-
-
 void FUN_0005817c(undefined1 param_1 [16],undefined8 param_2,undefined8 param_3,undefined8 param_4)
-
 {
   undefined8 uVar1;
   undefined8 uVar2;
@@ -20396,7 +19333,6 @@ void FUN_0005817c(undefined1 param_1 [16],undefined8 param_2,undefined8 param_3,
   undefined8 uVar6;
   char *local_70;
   undefined *local_68;
-  
   uVar1 = _objc_msgSend(&_OBJC_CLASS___UIApplication,"sharedApplication");
   _objc_retain(uVar1);
   uVar2 = _objc_msgSend(uVar1,"keyWindow");
@@ -20432,11 +19368,7 @@ void FUN_0005817c(undefined1 param_1 [16],undefined8 param_2,undefined8 param_3,
   } while (uVar5 != 0x33f4b5a9);
   return;
 }
-
-
-
 void FUN_0005834c(long param_1,long param_2,undefined8 param_3)
-
 {
   int iVar1;
   long lVar2;
@@ -20445,7 +19377,6 @@ void FUN_0005834c(long param_1,long param_2,undefined8 param_3)
   long unaff_x24;
   char local_49;
   long local_48;
-  
   _objc_retain(param_3);
   lVar2 = _objc_msgSend(&objc::class_t::GetFrame,"getCurrentFrame::",param_2,1);
   iVar1 = 0x63d7c45d;
@@ -20548,18 +19479,13 @@ LAB_00058538:
     iVar1 = 0x3e8d2cea;
   } while( true );
 }
-
-
-
 void FUN_00058670(long param_1,long param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar2 = -0x6b45f01d;
   do {
     while( true ) {
@@ -20606,27 +19532,18 @@ void FUN_00058670(long param_1,long param_2)
   } while (iVar3 != -0x750c36d9);
   return;
 }
-
-
-
 void FUN_000587e4(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005882c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*DAT_000a32f0)();
   return;
 }
-
-
-
 void FUN_00059a30(long param_1,long param_2)
-
 {
   undefined8 *puVar1;
   int iVar2;
   undefined8 local_8;
-  
   puVar1 = (undefined8 *)(param_2 + 0x28);
   iVar2 = -0x41103553;
   do {
@@ -20661,17 +19578,12 @@ LAB_00059afc:
     }
   } while( true );
 }
-
-
-
 void FUN_00059b3c(long param_1)
-
 {
   int iVar1;
   int iVar2;
   long local_30;
   undefined8 local_28;
-  
   iVar1 = -0x3dcf9a7;
   do {
     while( true ) {
@@ -20720,11 +19632,7 @@ void FUN_00059b3c(long param_1)
           (iVar1 = iVar2, iVar2 != -0x470b128));
   return;
 }
-
-
-
 undefined8 FUN_00059d04(long param_1,undefined8 param_2,undefined8 param_3)
-
 {
   int iVar1;
   int iVar2;
@@ -20746,7 +19654,6 @@ undefined8 FUN_00059d04(long param_1,undefined8 param_2,undefined8 param_3)
   long *local_78;
   undefined8 *local_70;
   undefined8 local_68;
-  
   iVar4 = 0x5dd69c49;
 LAB_00059d70:
   do {
@@ -21009,17 +19916,12 @@ LAB_0005a304:
     }
   } while( true );
 }
-
-
-
 void FUN_0005a5a4(long param_1,long param_2)
-
 {
   int iVar1;
   undefined8 local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar1 = 0x259f9715;
   while( true ) {
     while( true ) {
@@ -21054,17 +19956,12 @@ void FUN_0005a5a4(long param_1,long param_2)
   }
   return;
 }
-
-
-
 void FUN_0005a71c(long param_1)
-
 {
   int iVar1;
   int iVar2;
   undefined8 local_30;
   undefined8 local_28;
-  
   iVar1 = 0x44934147;
   do {
     while( true ) {
@@ -21116,11 +20013,7 @@ void FUN_0005a71c(long param_1)
   } while (iVar2 != 0x4479e91b);
   return;
 }
-
-
-
 undefined8 FUN_0005a8dc(long param_1,undefined8 param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -21144,7 +20037,6 @@ undefined8 FUN_0005a8dc(long param_1,undefined8 param_2)
   undefined8 local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   uVar3 = _objc_retain(param_2);
   iVar1 = -0x29a0f98;
   do {
@@ -21390,15 +20282,10 @@ undefined8 FUN_0005a8dc(long param_1,undefined8 param_2)
   } while (iVar4 != -0x1d2f087a);
   return local_68;
 }
-
-
-
 undefined8 FUN_0005b0e8(undefined8 param_1,undefined8 param_2)
-
 {
   int iVar1;
   int iVar2;
-  
   iVar1 = 0x4ea4873d;
   do {
     while( true ) {
@@ -21439,11 +20326,7 @@ undefined8 FUN_0005b0e8(undefined8 param_1,undefined8 param_2)
   } while (iVar2 != 0x2160fc69);
   return 0;
 }
-
-
-
 undefined8 FUN_0005b244(long param_1,undefined8 param_2)
-
 {
   int iVar1;
   int iVar2;
@@ -21464,7 +20347,6 @@ undefined8 FUN_0005b244(long param_1,undefined8 param_2)
   char *local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar2 = 0x388b7356;
   do {
     while( true ) {
@@ -21688,11 +20570,7 @@ undefined8 FUN_0005b244(long param_1,undefined8 param_2)
   } while (iVar3 != 0xb710966);
   return local_68;
 }
-
-
-
 undefined8 FUN_0005b9b8(long param_1,undefined8 param_2)
-
 {
   bool bVar1;
   int iVar2;
@@ -21718,7 +20596,6 @@ undefined8 FUN_0005b9b8(long param_1,undefined8 param_2)
   long *local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar2 = 0x57b36e33;
 LAB_0005ba28:
   do {
@@ -22063,11 +20940,7 @@ LAB_0005be20:
     }
   } while( true );
 }
-
-
-
 undefined8 FUN_0005c3dc(long param_1,undefined8 param_2)
-
 {
   bool bVar1;
   int iVar2;
@@ -22092,7 +20965,6 @@ undefined8 FUN_0005c3dc(long param_1,undefined8 param_2)
   long local_78;
   undefined8 local_70;
   undefined8 local_68;
-  
   iVar2 = 0x7ceaa107;
 LAB_0005c44c:
   while (iVar3 = iVar2, iVar2 = iVar3, iVar3 < 0x28ff3ab) {
@@ -22348,16 +21220,11 @@ LAB_0005c9f4:
   }
   goto LAB_0005c44c;
 }
-
-
-
 void FUN_0005cc74(long param_1,long param_2)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
-  
   iVar1 = -0x466939b7;
   do {
     while( true ) {
@@ -22414,15 +21281,10 @@ void FUN_0005cc74(long param_1,long param_2)
   } while ((iVar3 == 0x4003ab7c) || (iVar1 = iVar3, iVar3 != -0x1920214a));
   return;
 }
-
-
-
 void FUN_0005ce24(long param_1)
-
 {
   int iVar1;
   undefined8 local_68;
-  
   iVar1 = 0x15f8366a;
   while( true ) {
     while (-0x69902152 < iVar1) {
@@ -22453,12 +21315,8 @@ void FUN_0005ce24(long param_1)
   }
   return;
 }
-
-
-
 void FUN_0005cf64(long param_1,undefined8 param_2,undefined8 param_3,long param_4,undefined8 param_5
                  )
-
 {
   int iVar1;
   byte bVar2;
@@ -22498,7 +21356,6 @@ void FUN_0005cf64(long param_1,undefined8 param_2,undefined8 param_3,long param_
   char *local_80;
   cfstringStruct *local_78;
   cfstringStruct *local_70;
-  
   iVar5 = -0x7a33d776;
 LAB_0005d010:
   while (iVar7 = iVar5, iVar5 = iVar7, iVar7 < 0x7e9d805) {
@@ -22983,19 +21840,14 @@ LAB_0005dc78:
   }
   goto LAB_0005d010;
 }
-
-
-
 void FUN_0005e024(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
                  undefined8 param_5)
-
 {
   int iVar1;
   undefined8 local_80;
   undefined8 local_78;
   undefined8 local_70;
   code *local_68;
-  
   iVar1 = 0x601e02a3;
   while( true ) {
     while( true ) {
@@ -23039,11 +21891,7 @@ void FUN_0005e024(undefined8 param_1,undefined8 param_2,undefined8 param_3,undef
   }
   return;
 }
-
-
-
 void FUN_0005e1d8(undefined8 param_1)
-
 {
   undefined *puVar1;
   int iVar2;
@@ -23058,7 +21906,6 @@ void FUN_0005e1d8(undefined8 param_1)
   dispatch_queue_t local_78;
   undefined8 *local_70;
   undefined4 *local_68;
-  
   local_88 = param_1;
   _objc_retain(param_1);
   local_80 = _dispatch_get_global_queue(2,0);
@@ -23095,11 +21942,7 @@ void FUN_0005e1d8(undefined8 param_1)
   } while (iVar2 != -0x27c423a4);
   return;
 }
-
-
-
 void FUN_0005e33c(long param_1)
-
 {
   int iVar1;
   undefined8 *puVar2;
@@ -23117,7 +21960,6 @@ void FUN_0005e33c(long param_1)
   undefined *local_78;
   undefined *local_70;
   undefined8 local_68;
-  
   puVar4 = (undefined8 *)auStack_b0;
   iVar3 = 0x5b35ff9c;
   do {
@@ -23325,11 +22167,7 @@ void FUN_0005e33c(long param_1)
           (iVar3 = iVar6, iVar6 != -0x23a206a0));
   return;
 }
-
-
-
 void FUN_0005ea0c(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -23338,7 +22176,6 @@ void FUN_0005ea0c(long param_1)
   undefined8 local_68;
   undefined8 local_60;
   undefined8 local_58;
-  
   uVar4 = *(undefined8 *)PTR____NSDictionary0___00068038;
   iVar1 = -0x58a42edd;
   do {
@@ -23404,11 +22241,7 @@ void FUN_0005ea0c(long param_1)
   } while (iVar3 != 0x1a780c98);
   return;
 }
-
-
-
 void FUN_0005ec40(long param_1)
-
 {
   int iVar1;
   int iVar2;
@@ -23416,7 +22249,6 @@ void FUN_0005ec40(long param_1)
   undefined8 local_48;
   char *local_40;
   undefined8 local_38;
-  
   iVar2 = -0x33a1490d;
   do {
     while( true ) {
@@ -23462,17 +22294,12 @@ void FUN_0005ec40(long param_1)
   } while (iVar3 != 0x72e75105);
   return;
 }
-
-
-
 void FUN_0005eddc(long param_1)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 *local_8;
-  
   iVar2 = 0x5a469c7e;
   do {
     while( true ) {
@@ -23519,17 +22346,12 @@ void FUN_0005eddc(long param_1)
   _objc_msgSend(*local_8,"dismissViewControllerAnimated:completion:",1,0);
   return;
 }
-
-
-
 void FUN_0005ef04(long param_1)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
   undefined8 local_38;
-  
   iVar1 = -0x581f3943;
   do {
     while( true ) {
@@ -23589,16 +22411,11 @@ void FUN_0005ef04(long param_1)
   } while ((iVar3 == -0x703fac4) || (iVar1 = iVar3, iVar3 != 0x24e229e7));
   return;
 }
-
-
-
 void FUN_0005f0d0(void)
-
 {
   int iVar1;
   int iVar2;
   int iVar3;
-  
   iVar2 = -0x5107a827;
   do {
     while( true ) {
@@ -23641,14 +22458,9 @@ void FUN_0005f0d0(void)
   } while (iVar3 != 0x3e54e200);
   return;
 }
-
-
-
 bool FUN_0005f228(int param_1,int param_2,int param_3)
-
 {
   int iVar1;
-  
   if (DAT_000a41c0 == -1) {
     iVar1 = DAT_000a41b0 - param_1;
     if (param_1 < DAT_000a41b0) {
@@ -23672,27 +22484,18 @@ bool FUN_0005f228(int param_1,int param_2,int param_3)
   }
   return false;
 }
-
-
-
 void FUN_0005f2ec(void)
-
 {
   FUN_0005f440(1);
   return;
 }
-
-
-
 void FUN_0005f2f4(undefined4 param_1,int param_2,uint param_3,uint param_4)
-
 {
   int iVar1;
   ulong uVar2;
   undefined4 local_40;
   uint uStack_3c;
   long local_38;
-  
   local_38 = *(long *)PTR____stack_chk_guard_00068050;
   if (DAT_000a41c8 == -1) {
     if (DAT_000a41d0 == (code *)0x0) {
@@ -23735,20 +22538,12 @@ LAB_0005f3c8:
                     // WARNING: Subroutine does not return
   ___stack_chk_fail(uVar2);
 }
-
-
-
 void FUN_0005f438(void)
-
 {
   FUN_0005f440(0);
   return;
 }
-
-
-
 void FUN_0005f440(FILE *param_1)
-
 {
   int iVar1;
   uint uVar2;
@@ -23773,7 +22568,6 @@ void FUN_0005f440(FILE *param_1)
   uchar *puVar21;
   char acStack_88 [32];
   long local_68;
-  
   local_68 = *(long *)PTR____stack_chk_guard_00068050;
   pFVar3 = param_1;
   if ((DAT_000a41d0 == (FILE *)0x0 || (int)param_1 != 0) &&
@@ -23850,1042 +22644,653 @@ void FUN_0005f440(FILE *param_1)
                     // WARNING: Subroutine does not return
   ___stack_chk_fail(pFVar3);
 }
-
-
-
 void FUN_0005f770(void)
-
 {
   code *pcVar1;
-  
   _CFBundleGetVersionNumber(0);
                     // WARNING: Does not return
   pcVar1 = (code *)SoftwareBreakpoint(1,0x5f780);
   (*pcVar1)();
 }
-
-
-
 void _AudioServicesPlaySystemSound(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f788. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__AudioServicesPlaySystemSound_00068078)();
   return;
 }
-
-
-
 void _CATransform3DMakeRotation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f794. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CATransform3DMakeRotation_00068080)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 CCCryptorStatus
 _CCCrypt(CCOperation op,CCAlgorithm alg,CCOptions options,void *key,size_t keyLength,void *iv,
         void *dataIn,size_t dataInLength,void *dataOut,size_t dataOutAvailable,size_t *dataOutMoved)
-
 {
   CCCryptorStatus CVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f7a0. Too many branches
                     // WARNING: Treating indirect jump as call
   CVar1 = (*(code *)PTR__CCCrypt_00068088)(op,alg,options);
   return CVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 uchar * _CC_MD5(void *data,CC_LONG len,uchar *md)
-
 {
   uchar *puVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f7ac. Too many branches
                     // WARNING: Treating indirect jump as call
   puVar1 = (uchar *)(*(code *)PTR__CC_MD5_00068090)(data,len);
   return puVar1;
 }
-
-
-
 void _CFBundleGetVersionNumber(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7b8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CFBundleGetVersionNumber_00068098)();
   return;
 }
-
-
-
 void _CFNotificationCenterAddObserver(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7c4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CFNotificationCenterAddObserver_000680a0)();
   return;
 }
-
-
-
 void _CFNotificationCenterGetDarwinNotifyCenter(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7d0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CFNotificationCenterGetDarwinNotifyCenter_000680a8)();
   return;
 }
-
-
-
 void _CFRelease(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7dc. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CFRelease_000680b0)();
   return;
 }
-
-
-
 void _CGAffineTransformConcat(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7e8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CGAffineTransformConcat_000680b8)();
   return;
 }
-
-
-
 void _CGAffineTransformMakeRotation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f7f4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CGAffineTransformMakeRotation_000680c0)();
   return;
 }
-
-
-
 void _CGAffineTransformMakeScale(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f800. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CGAffineTransformMakeScale_000680c8)();
   return;
 }
-
-
-
 void _CMFormatDescriptionGetMediaSubType(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f80c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMFormatDescriptionGetMediaSubType_000680d0)();
   return;
 }
-
-
-
 void _CMFormatDescriptionGetMediaType(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f818. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMFormatDescriptionGetMediaType_000680d8)();
   return;
 }
-
-
-
 void _CMGetAttachment(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f824. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMGetAttachment_000680e0)();
   return;
 }
-
-
-
 void _CMSampleBufferCreateCopy(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f830. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferCreateCopy_000680e8)();
   return;
 }
-
-
-
 void _CMSampleBufferCreateForImageBuffer(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f83c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferCreateForImageBuffer_000680f0)();
   return;
 }
-
-
-
 void _CMSampleBufferGetDecodeTimeStamp(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f848. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferGetDecodeTimeStamp_000680f8)();
   return;
 }
-
-
-
 void _CMSampleBufferGetDuration(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f854. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferGetDuration_00068100)();
   return;
 }
-
-
-
 void _CMSampleBufferGetFormatDescription(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f860. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferGetFormatDescription_00068108)();
   return;
 }
-
-
-
 void _CMSampleBufferGetImageBuffer(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f86c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferGetImageBuffer_00068110)();
   return;
 }
-
-
-
 void _CMSampleBufferGetPresentationTimeStamp(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f878. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferGetPresentationTimeStamp_00068118)();
   return;
 }
-
-
-
 void _CMSampleBufferIsValid(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f884. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSampleBufferIsValid_00068120)();
   return;
 }
-
-
-
 void _CMSetAttachment(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f890. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMSetAttachment_00068128)();
   return;
 }
-
-
-
 void _CMVideoFormatDescriptionCreateForImageBuffer(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f89c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMVideoFormatDescriptionCreateForImageBuffer_00068130)();
   return;
 }
-
-
-
 void _CMVideoFormatDescriptionGetDimensions(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8a8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__CMVideoFormatDescriptionGetDimensions_00068138)();
   return;
 }
-
-
-
 void _MSHookMessageEx(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8b4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__MSHookMessageEx_00068140)();
   return;
 }
-
-
-
 void _NSClassFromString(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8c0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__NSClassFromString_00068148)();
   return;
 }
-
-
-
 void _NSLog(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8cc. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__NSLog_00068150)();
   return;
 }
-
-
-
 void _NSSearchPathForDirectoriesInDomains(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8d8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__NSSearchPathForDirectoriesInDomains_00068158)();
   return;
 }
-
-
-
 void _NSStringFromClass(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8e4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__NSStringFromClass_00068160)();
   return;
 }
-
-
-
 void _UIImageJPEGRepresentation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8f0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__UIImageJPEGRepresentation_00068168)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void __Block_object_assign(void *param_1,void *param_2,int param_3)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f8fc. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR___Block_object_assign_00068170)(param_1,param_2,param_3);
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void __Block_object_dispose(void *param_1,int param_2)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f908. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR___Block_object_dispose_00068178)(param_1,param_2);
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void __Unwind_Resume(_Unwind_Exception *exception_object)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f914. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR___Unwind_Resume_00068180)();
   return;
 }
-
-
-
 void ___cxa_atexit(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f920. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR____cxa_atexit_00068188)();
   return;
 }
-
-
-
 void ___stack_chk_fail(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f92c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR____stack_chk_fail_00068190)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 u_int32_t _arc4random(void)
-
 {
   u_int32_t uVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f938. Too many branches
                     // WARNING: Treating indirect jump as call
   uVar1 = (*(code *)PTR__arc4random_00068198)();
   return uVar1;
 }
-
-
-
 void _class_addMethod(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f944. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__class_addMethod_000681a0)();
   return;
 }
-
-
-
 void _class_getInstanceMethod(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f950. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__class_getInstanceMethod_000681a8)();
   return;
 }
-
-
-
 void _class_getMethodImplementation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f95c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__class_getMethodImplementation_000681b0)();
   return;
 }
-
-
-
 void _class_getSuperclass(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f968. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__class_getSuperclass_000681b8)();
   return;
 }
-
-
-
 void _dispatch_after(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f974. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__dispatch_after_000681c0)();
   return;
 }
-
-
-
 void _dispatch_async(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f980. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__dispatch_async_000681c8)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 dispatch_queue_t _dispatch_get_global_queue(dispatch_queue_priority_t priority,ulong flags)
-
 {
   dispatch_queue_t pdVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f98c. Too many branches
                     // WARNING: Treating indirect jump as call
   pdVar1 = (dispatch_queue_t)(*(code *)PTR__dispatch_get_global_queue_000681d0)();
   return pdVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void _dispatch_once_f(dispatch_once_t *predicate,void *context,dispatch_function_t function)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f998. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__dispatch_once_f_000681d8)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 dispatch_time_t _dispatch_time(dispatch_time_t when,int64_t delta)
-
 {
   dispatch_time_t dVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9a4. Too many branches
                     // WARNING: Treating indirect jump as call
   dVar1 = (*(code *)PTR__dispatch_time_000681e0)();
   return dVar1;
 }
-
-
-
 void _dlsym(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f9b0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__dlsym_000681e8)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 int _fclose(FILE *param_1)
-
 {
   int iVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9bc. Too many branches
                     // WARNING: Treating indirect jump as call
   iVar1 = (*(code *)PTR__fclose_000681f0)((int)param_1);
   return iVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 FILE * _fopen(char *param_1,char *param_2)
-
 {
   FILE *pFVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9c8. Too many branches
                     // WARNING: Treating indirect jump as call
   pFVar1 = (FILE *)(*(code *)PTR__fopen_000681f8)();
   return pFVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 size_t _fread(void *param_1,size_t param_2,size_t param_3,FILE *param_4)
-
 {
   size_t sVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9d4. Too many branches
                     // WARNING: Treating indirect jump as call
   sVar1 = (*(code *)PTR__fread_00068200)();
   return sVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void _free(void *param_1)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005f9e0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__free_00068208)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 int _fseek(FILE *param_1,long param_2,int param_3)
-
 {
   int iVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9ec. Too many branches
                     // WARNING: Treating indirect jump as call
   iVar1 = (*(code *)PTR__fseek_00068210)((int)param_1,param_2,param_3);
   return iVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 long _ftell(FILE *param_1)
-
 {
   long lVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005f9f8. Too many branches
                     // WARNING: Treating indirect jump as call
   lVar1 = (*(code *)PTR__ftell_00068218)();
   return lVar1;
 }
-
-
-
 void _imp_implementationWithBlock(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa04. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__imp_implementationWithBlock_00068220)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void * _malloc(size_t param_1)
-
 {
   void *pvVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fa10. Too many branches
                     // WARNING: Treating indirect jump as call
   pvVar1 = (void *)(*(code *)PTR__malloc_00068228)();
   return pvVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void * _memcpy(void *param_1,void *param_2,size_t param_3)
-
 {
   void *pvVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fa1c. Too many branches
                     // WARNING: Treating indirect jump as call
   pvVar1 = (void *)(*(code *)PTR__memcpy_00068230)();
   return pvVar1;
 }
-
-
-
 void _method_getImplementation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa28. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__method_getImplementation_00068238)();
   return;
 }
-
-
-
 void _method_getTypeEncoding(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa34. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__method_getTypeEncoding_00068240)();
   return;
 }
-
-
-
 void _method_setImplementation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa40. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__method_setImplementation_00068248)();
   return;
 }
-
-
-
 void _objc_alloc(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa4c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_alloc_00068250)();
   return;
 }
-
-
-
 void _objc_autorelease(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa58. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_autorelease_00068258)();
   return;
 }
-
-
-
 void _objc_autoreleasePoolPop(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa64. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_autoreleasePoolPop_00068260)();
   return;
 }
-
-
-
 void _objc_autoreleasePoolPush(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa70. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_autoreleasePoolPush_00068268)();
   return;
 }
-
-
-
 void _objc_autoreleaseReturnValue(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa7c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_autoreleaseReturnValue_00068270)();
   return;
 }
-
-
-
 void _objc_begin_catch(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa88. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_begin_catch_00068278)();
   return;
 }
-
-
-
 void _objc_end_catch(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fa94. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_end_catch_00068280)();
   return;
 }
-
-
-
 void _objc_enumerationMutation(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005faa0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_enumerationMutation_00068288)();
   return;
 }
-
-
-
 void _objc_getClass(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005faac. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_getClass_00068290)();
   return;
 }
-
-
-
 void _objc_getProperty(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fab8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_getProperty_00068298)();
   return;
 }
-
-
-
 void _objc_msgSend(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fac4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_msgSend_000682a0)();
   return;
 }
-
-
-
 void _objc_msgSendSuper2(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fad0. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_msgSendSuper2_000682a8)();
   return;
 }
-
-
-
 void _objc_release(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fadc. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_release_000682b0)();
   return;
 }
-
-
-
 void _objc_retain(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fae8. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_retain_000682b8)();
   return;
 }
-
-
-
 void _objc_retainAutorelease(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005faf4. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_retainAutorelease_000682c0)();
   return;
 }
-
-
-
 void _objc_retainAutoreleaseReturnValue(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb00. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_retainAutoreleaseReturnValue_000682c8)();
   return;
 }
-
-
-
 void _objc_retainAutoreleasedReturnValue(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb0c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_retainAutoreleasedReturnValue_000682d0)();
   return;
 }
-
-
-
 void _objc_retainBlock(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb18. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_retainBlock_000682d8)();
   return;
 }
-
-
-
 void _objc_setProperty_nonatomic_copy(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb24. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_setProperty_nonatomic_copy_000682e0)();
   return;
 }
-
-
-
 void _objc_storeStrong(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb30. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_storeStrong_000682e8)();
   return;
 }
-
-
-
 void _objc_unsafeClaimAutoreleasedReturnValue(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb3c. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__objc_unsafeClaimAutoreleasedReturnValue_000682f0)();
   return;
 }
-
-
-
 void _object_getClass(void)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb48. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__object_getClass_000682f8)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 void _rewind(FILE *param_1)
-
 {
                     // WARNING: Could not recover jumptable at 0x0005fb54. Too many branches
                     // WARNING: Treating indirect jump as call
   (*(code *)PTR__rewind_00068300)();
   return;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 uint _sleep(uint param_1)
-
 {
   uint uVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fb60. Too many branches
                     // WARNING: Treating indirect jump as call
   uVar1 = (*(code *)PTR__sleep_00068308)(param_1);
   return uVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 int _sscanf(char *param_1,char *param_2,...)
-
 {
   int iVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fb6c. Too many branches
                     // WARNING: Treating indirect jump as call
   iVar1 = (*(code *)PTR__sscanf_00068310)((int)param_1);
   return iVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 size_t _strlen(char *param_1)
-
 {
   size_t sVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fb78. Too many branches
                     // WARNING: Treating indirect jump as call
   sVar1 = (*(code *)PTR__strlen_00068318)();
   return sVar1;
 }
-
-
-
 // WARNING: Unknown calling convention -- yet parameter storage is locked
-
 int _uname(utsname *param_1)
-
 {
   int iVar1;
-  
                     // WARNING: Could not recover jumptable at 0x0005fb84. Too many branches
                     // WARNING: Treating indirect jump as call
   iVar1 = (*(code *)PTR__uname_00068320)((int)param_1);
   return iVar1;
 }
-
-
